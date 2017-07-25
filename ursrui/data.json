@@ -1,7 +1,7 @@
 {
     "project": {
         "name": "URS UI",
-        "description": "<h2>SmartDoc</h2> <p>Javascript Document builder base on YUIDoc.</p>",
+        "description": "<h2>URS RUI</h2> <p>URS RegularUI 组件库</p>",
         "version": "1.1.0",
         "url": "https://g.hz.netease.com/urs-front/urs-ui",
         "logo": "",
