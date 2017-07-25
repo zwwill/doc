@@ -1,0 +1,125 @@
+{
+    "project": {
+        "name": "URS UI",
+        "description": "<h2>SmartDoc</h2> <p>Javascript Document builder base on YUIDoc.</p>",
+        "version": "1.1.0",
+        "url": "https://g.hz.netease.com/urs-front/urs-ui",
+        "logo": "",
+        "navs": [
+            {}
+        ]
+    },
+    "files": {
+        "input/code/ui/regularTest.js": {
+            "name": "input/code/ui/regularTest.js",
+            "modules": {
+                "URS UI": 1
+            },
+            "classes": {
+                "TestDemo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "input/code/ui/regularTest2.js": {
+            "name": "input/code/ui/regularTest2.js",
+            "modules": {},
+            "classes": {
+                "TestDemo2": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "URS UI": {
+            "name": "URS UI",
+            "submodules": {},
+            "classes": {
+                "TestDemo": 1,
+                "TestDemo2": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "input/code/ui/regularTest2.js",
+            "line": 2,
+            "description": "URS基础组件Test；\n* 提供了example的html与js实例；\n* example中引用了Regular"
+        }
+    },
+    "classes": {
+        "TestDemo": {
+            "name": "TestDemo",
+            "shortname": "TestDemo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "URS UI",
+            "namespace": "",
+            "file": "input/code/ui/regularTest.js",
+            "line": 8,
+            "description": "URS Test Demo",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\t    //利用Regular构建你的app吧\r\n\t    var HelloRegular = Regular.extend({\r\n\t        template: '<h1>Hello, URS RUI</h1>'\r\n\t    });\r\n\t\r\n\t    // initialize component then $inject to #app's  bottom\r\n\t    var component = new HelloRegular({\r\n\t        data: {username: \"leeluolee\"}\r\n\t    });\r\n\t    component.$inject('#app');\r\n\t</script>"
+            ],
+            "exampleTitles": [
+                "demo"
+            ],
+            "show": true
+        },
+        "TestDemo2": {
+            "name": "TestDemo2",
+            "shortname": "TestDemo2",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "URS UI",
+            "namespace": "",
+            "file": "input/code/ui/regularTest2.js",
+            "line": 2,
+            "description": "URS Test Demo2",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\t    //利用Regular构建你的app吧\r\n\t    var HelloRegular = Regular.extend({\r\n\t        template: '<h1>Hello, URS RUI</h1>'\r\n\t    });\r\n\t\r\n\t    // initialize component then $inject to #app's  bottom\r\n\t    var component = new HelloRegular({\r\n\t        data: {username: \"leeluolee\"}\r\n\t    });\r\n\t    component.$inject('#app');\r\n\t</script>"
+            ],
+            "exampleTitles": [
+                "demo"
+            ],
+            "show": true
+        }
+    },
+    "classitems": [],
+    "warnings": [
+        {
+            "message": "unknown tag: content",
+            "line": " input/code/ui/regularTest.js:8"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " input/code/ui/regularTest.js:8"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " input/code/ui/regularTest.js:8"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " input/code/ui/regularTest2.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " input/code/ui/regularTest2.js:2"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " input/code/ui/regularTest2.js:2"
+        }
+    ]
+}
