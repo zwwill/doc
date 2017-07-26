@@ -56,13 +56,13 @@
         <ul class="m-navbar f-fr">
             
             
-            <li class="z-crt"><a href="../start/quickstart.html">开始使用</a></li>
+            <li><a href="../start/quickstart.html">开始使用</a></li>
             
             
             <li><a href="../cssmodule/navbar.html">UI规范</a></li>
             
             
-            <li><a href="../jsunit/inputfield.html">JS元件</a></li>
+            <li class="z-crt"><a href="../jsunit/inputfield.html">JS元件</a></li>
             
             
             <li><a href="../jsmodule/tabs.html">JS模块</a></li>
@@ -78,39 +78,37 @@
         
         
         
-        <li><a href="../start/quickstart.html" >快速开始<small> QuickStart</small>
+        <li class="sidebar_group"><span>表单类</span></li>
+        
+        <li><a href="../jsunit/inputfield.html" >输入基础组件<small> InputField</small>
+        
+            <span class="u-badge2 u-badge2-beta" title="该组件的部分功能还不太稳定"></span>
         
         </a></li>
         
         
         
-        <li class="z-crt"><a href="../start/feature.html" >特性<small> Feature</small>
+        <li><a href="../jsunit/button.html" >基础封装按钮<small> Button</small>
+        
+            <span class="u-badge2 u-badge2-stable" title="该组件目前已比较稳定"></span>
         
         </a></li>
         
         
         
-        <li><a href="https://github.com/regular-ui/regular-ui/releases" target=&#34;_blank&#34;>更新日志<small> ChangeLog</small>
+        <li class="z-crt"><a href="../jsunit/button2.html" >基础封装按钮(无预览)<small> Button2</small>
+        
+            <span class="u-badge2 u-badge2-stable" title="该组件目前已比较稳定"></span>
         
         </a></li>
         
         
         
-        <li class="sidebar_group"><span>开发者</span></li>
+        <li class="sidebar_group"><span>导航类</span></li>
         
-        <li><a href="../start/modular.html" >模块化<small> Modular</small>
+        <li><a href="../jsunit/menu.html" >多级菜单<small> Menu</small>
         
-        </a></li>
-        
-        
-        
-        <li><a href="../start/structure.html" >项目结构<small> Structure</small>
-        
-        </a></li>
-        
-        
-        
-        <li><a href="../start/rule.html" >规范<small> Rule</small>
+            <span class="u-badge2 u-badge2-stable" title="该组件目前已比较稳定"></span>
         
         </a></li>
         
@@ -118,29 +116,21 @@
 </div><div class="g-mn">
     <article class="m-article">
         
-        <h2>特性<small> Feature</small></h2>
+        <h2>基础封装按钮(无预览)<small> Button2</small></h2>
         
-        <h4 id="-">兼容性</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"><img src="../img/chrome_48x48.png" alt="Chrome"></th>
-<th style="text-align:center"><img src="../img/firefox_48x48.png" alt="Firefox"></th>
-<th style="text-align:center"><img src="../img/internet-explorer_48x48.png" alt="IE"></th>
-<th style="text-align:center"><img src="../img/safari_48x48.png" alt="Safari"></th>
-<th style="text-align:center"><img src="../img/opera_48x48.png" alt="Opera"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Latest ✔</td>
-<td style="text-align:center">Latest ✔</td>
-<td style="text-align:center">IE8+</td>
-<td style="text-align:center">Latest ✔</td>
-<td style="text-align:center">Latest ✔</td>
-</tr>
-</tbody>
-</table>
+        <h3 id="-">示例</h3>
+<h4 id="-">基本形式</h4>
+<p>自定义<code>&lt;Button /&gt;</code>一致。</p>
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">Button</span> <span class="cm-attribute">enableTip</span>=<span class="cm-string">&quot;{tlt}&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">Button</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre class="lang-javascript"><code><span class="cm-keyword">var</span> <span class="cm-variable">input</span> <span class="cm-operator">=</span> <span class="cm-variable">require</span>(<span class="cm-string">&#39;@netease/urs-ui&#39;</span>).<span class="cm-property">InputUI</span>;
+<span class="cm-keyword">var</span> <span class="cm-variable">component</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RGUI</span>.<span class="cm-property">Component</span>({
+    <span class="cm-property">template</span>: <span class="cm-variable">template</span>,
+    <span class="cm-property">data</span>: {
+        <span class="cm-property">tlt</span>:<span class="cm-string">&#39;测试按钮&#39;</span>
+    }
+});
+</code></pre>
 
         
     </article>
@@ -227,7 +217,7 @@ var $$ = function(selector){return document.querySelectorAll(selector)};
 })();
 </script>
 <script>
-
+var index = 0;
 </script>
 </body>
 </html>

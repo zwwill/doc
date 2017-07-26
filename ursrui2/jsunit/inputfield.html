@@ -10,6 +10,7 @@
 <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../css/doc.default.min.css">
+<link rel="stylesheet" href="../css/doc2.default.min.css">
 <!--[if lt IE9]>
 <script>
 (function() {
@@ -79,9 +80,25 @@
         
         <li class="sidebar_group"><span>表单类</span></li>
         
-        <li class="z-crt"><a href="../jsunit/inputfield.html" >输入扩展<small> InputField</small>
+        <li class="z-crt"><a href="../jsunit/inputfield.html" >输入基础组件<small> InputField</small>
         
             <span class="u-badge2 u-badge2-beta" title="该组件的部分功能还不太稳定"></span>
+        
+        </a></li>
+        
+        
+        
+        <li><a href="../jsunit/button.html" >基础封装按钮<small> Button</small>
+        
+            <span class="u-badge2 u-badge2-stable" title="该组件目前已比较稳定"></span>
+        
+        </a></li>
+        
+        
+        
+        <li><a href="../jsunit/button2.html" >基础封装按钮(无预览)<small> Button2</small>
+        
+            <span class="u-badge2 u-badge2-stable" title="该组件目前已比较稳定"></span>
         
         </a></li>
         
@@ -99,19 +116,21 @@
 </div><div class="g-mn">
     <article class="m-article">
         
-        <h2>输入扩展<small> InputField</small></h2>
+        <h2>输入基础组件<small> InputField</small></h2>
         
         <h3 id="-">示例</h3>
 <h4 id="-">基本形式</h4>
 <p>大部分属性的用法与<code>&lt;input&gt;</code>一致。</p>
 <div class="m-example"></div>
 
-<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">label</span><span class="cm-tagcm-bracket">&gt;</span>InputField：<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">InputField</span> <span class="cm-attribute">placeholder</span>=<span class="cm-string">&#39;InputField&#39;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">InputField</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tagcm-bracket">&gt;</span>
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">label</span><span class="cm-tagcm-bracket">&gt;</span>InputField：<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tagcm-bracket">/&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">InputField</span> <span class="cm-attribute">placeholder</span>=<span class="cm-string">&#39;{placeholder}&#39;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">InputField</span><span class="cm-tagcm-bracket">&gt;</span>
 </code></pre>
-<pre class="lang-javascript"><code><span class="cm-keyword">var</span> <span class="cm-variable">input</span> <span class="cm-operator">=</span> <span class="cm-variable">require</span>(<span class="cm-string">&#39;@netease/urs-ui&#39;</span>).<span class="cm-property">InputUI</span>;
+<pre class="lang-javascript"><code><span class="cm-comment">//var input = require(&#39;@netease/urs-ui&#39;).InputUI;</span>
 <span class="cm-keyword">var</span> <span class="cm-variable">component</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RGUI</span>.<span class="cm-property">Component</span>({
     <span class="cm-property">template</span>: <span class="cm-variable">template</span>,
     <span class="cm-property">data</span>: {
+        <span class="cm-property">placeholder</span>:<span class="cm-string">&quot;test placeholder&quot;</span>
     }
 });
 </code></pre>
@@ -204,12 +223,14 @@ var $$ = function(selector){return document.querySelectorAll(selector)};
 var index = 0;
 (function(index) {
     var template = RGUI._.multiline(function(){/*
-<label>InputField：<InputField placeholder='InputField'></InputField></label>
+<label>InputField：</label><br/>
+<InputField placeholder='{placeholder}'></InputField>
     */})
-var input = require('@netease/urs-ui').InputUI;
+//var input = require('@netease/urs-ui').InputUI;
 var component = new RGUI.Component({
     template: template,
     data: {
+        placeholder:"test placeholder"
     }
 });
     component.$inject($$(".m-example")[index]);
