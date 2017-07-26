@@ -123,13 +123,16 @@
 <p>自定义<code>&lt;Button /&gt;</code>一致。</p>
 <div class="m-example"></div>
 
-<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">Button</span> <span class="cm-attribute">enableTip</span>=<span class="cm-string">&quot;{tlt}&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">Button</span><span class="cm-tagcm-bracket">&gt;</span>
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">Button</span> <span class="cm-attribute">enableTip</span>=<span class="cm-string">&quot;{tlt}&quot;</span> <span class="cm-attribute">on-click</span>=<span class="cm-attribute">{this.funcClick()}</span><span class="cm-tagcm-bracketcm-error">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">Button</span><span class="cm-tagcm-bracket">&gt;</span>
 </code></pre>
 <pre class="lang-javascript"><code><span class="cm-comment">//var input = require(&#39;@netease/urs-ui&#39;).InputUI;</span>
 <span class="cm-keyword">var</span> <span class="cm-variable">component</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RGUI</span>.<span class="cm-property">Component</span>({
     <span class="cm-property">template</span>: <span class="cm-variable">template</span>,
     <span class="cm-property">data</span>: {
-        <span class="cm-property">tlt</span>:<span class="cm-string">&#39;测试按钮&#39;</span>
+        <span class="cm-property">tlt</span>:<span class="cm-string">&#39;测试点击按钮&#39;</span>
+    },
+    <span class="cm-property">funcClick</span>: <span class="cm-keyword">function</span>() {
+      <span class="cm-variable">alert</span>(<span class="cm-string">&#39;Click&#39;</span>);
     }
 });
 </code></pre>
@@ -222,13 +225,16 @@ var $$ = function(selector){return document.querySelectorAll(selector)};
 var index = 0;
 (function(index) {
     var template = RGUI._.multiline(function(){/*
-<Button enableTip="{tlt}"></Button>
+<Button enableTip="{tlt}" on-click={this.funcClick()}></Button>
     */})
 //var input = require('@netease/urs-ui').InputUI;
 var component = new RGUI.Component({
     template: template,
     data: {
-        tlt:'测试按钮'
+        tlt:'测试点击按钮'
+    },
+    funcClick: function() {
+      alert('Click');
     }
 });
     component.$inject($$(".m-example")[index]);
