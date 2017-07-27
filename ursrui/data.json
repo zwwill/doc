@@ -10,116 +10,288 @@
         ]
     },
     "files": {
-        "input/code/ui/regularTest.js": {
-            "name": "input/code/ui/regularTest.js",
+        "field/base/rules.js": {
+            "name": "field/base/rules.js",
             "modules": {
-                "URS UI": 1
+                "ValidateRules": 1
             },
             "classes": {
-                "TestDemo": 1
+                "sms": 1,
+                "captcha": 1
             },
             "fors": {},
             "namespaces": {}
         },
-        "input/code/ui/regularTest2.js": {
-            "name": "input/code/ui/regularTest2.js",
-            "modules": {},
-            "classes": {
-                "TestDemo2": 1
+        "field/ui/mbinput/mbinput.js": {
+            "name": "field/ui/mbinput/mbinput.js",
+            "modules": {
+                "Form": 1
             },
+            "classes": {
+                "MbInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "field/util/input/input.js": {
+            "name": "field/util/input/input.js",
+            "modules": {},
+            "classes": {},
             "fors": {},
             "namespaces": {}
         }
     },
     "modules": {
-        "URS UI": {
-            "name": "URS UI",
+        "ValidateRules": {
+            "name": "ValidateRules",
             "submodules": {},
             "classes": {
-                "TestDemo": 1,
-                "TestDemo2": 1
+                "sms": 1,
+                "captcha": 1
             },
             "fors": {},
             "namespaces": {},
             "tag": "module",
-            "file": "input/code/ui/regularTest2.js",
-            "line": 2,
-            "description": "URS基础组件Test；\n* 提供了example的html与js实例；\n* example中引用了Regular"
+            "file": "field/base/rules.js",
+            "line": 29,
+            "description": "ValidateRules 默认输入组件规则；\n* 数组形式；",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "type",
+                    "description": "类型：{'is','isRequired','isNot','isLength','method'}；",
+                    "type": "String"
+                },
+                {
+                    "name": "trigger",
+                    "description": "触发条件：{'blur'，'submit'}；",
+                    "type": "String"
+                },
+                {
+                    "name": "message",
+                    "description": "触发消息：请输入正确格式的短信验证码；",
+                    "type": "String"
+                },
+                {
+                    "name": "options",
+                    "description": "触发条件：/^[0-9]{6}$/；",
+                    "type": "RegExp"
+                }
+            ]
+        },
+        "Form": {
+            "name": "Form",
+            "submodules": {},
+            "classes": {
+                "MbInput": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 9,
+            "description": "Form表单；\n* 表单组件；",
+            "is_constructor": 1
         }
     },
     "classes": {
-        "TestDemo": {
-            "name": "TestDemo",
-            "shortname": "TestDemo",
+        "sms": {
+            "name": "sms",
+            "shortname": "sms",
             "classitems": [],
             "plugins": [],
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "URS UI",
+            "module": "ValidateRules",
             "namespace": "",
-            "file": "input/code/ui/regularTest.js",
-            "line": 8,
-            "description": "URS Test Demo",
+            "file": "field/base/rules.js",
+            "line": 13,
+            "description": "短信输入规则",
+            "type": "Array",
             "is_constructor": 1,
-            "content": "{string} type 内容",
-            "example": [
-                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\t    //利用Regular构建你的app吧\r\n\t    var HelloRegular = Regular.extend({\r\n\t        template: '<h1>Hello, URS RUI</h1>'\r\n\t    });\r\n\t\r\n\t    // initialize component then $inject to #app's  bottom\r\n\t    var component = new HelloRegular({\r\n\t        data: {username: \"leeluolee\"}\r\n\t    });\r\n\t    component.$inject('#app');\r\n\t</script>"
-            ],
-            "exampleTitles": [
-                "demo"
-            ],
-            "show": true
+            "params": [
+                {
+                    "name": "type",
+                    "description": "类型：{'is','isRequired','isNot','isLength','method'}；",
+                    "type": "String"
+                },
+                {
+                    "name": "trigger",
+                    "description": "触发条件：{'blur'，'submit'}；",
+                    "type": "String"
+                },
+                {
+                    "name": "message",
+                    "description": "触发消息：请输入正确格式的短信验证码；",
+                    "type": "String"
+                },
+                {
+                    "name": "options",
+                    "description": "触发条件：/^[0-9]{6}$/；",
+                    "type": "RegExp"
+                }
+            ]
         },
-        "TestDemo2": {
-            "name": "TestDemo2",
-            "shortname": "TestDemo2",
+        "captcha": {
+            "name": "captcha",
+            "shortname": "captcha",
             "classitems": [],
             "plugins": [],
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "URS UI",
+            "module": "ValidateRules",
             "namespace": "",
-            "file": "input/code/ui/regularTest2.js",
-            "line": 2,
-            "description": "URS Test Demo2",
+            "file": "field/base/rules.js",
+            "line": 29,
+            "description": "图片验证码输入规则",
+            "type": "Array",
             "is_constructor": 1,
+            "params": [
+                {
+                    "name": "op",
+                    "description": "参数；",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "filter",
+                            "description": "过滤器",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "data",
+                            "description": "更新数据",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "success",
+                            "description": "成功之后",
+                            "type": "Object"
+                        }
+                    ]
+                }
+            ],
             "content": "{string} type 内容",
-            "example": [
-                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\t    //利用Regular构建你的app吧\r\n\t    var HelloRegular = Regular.extend({\r\n\t        template: '<h1>Hello, URS RUI</h1>'\r\n\t    });\r\n\t\r\n\t    // initialize component then $inject to #app's  bottom\r\n\t    var component = new HelloRegular({\r\n\t        data: {username: \"leeluolee\"}\r\n\t    });\r\n\t    component.$inject('#app');\r\n\t</script>"
-            ],
-            "exampleTitles": [
-                "demo"
-            ],
-            "show": true
+            "show": true,
+            "static": 1
+        },
+        "MbInput": {
+            "name": "MbInput",
+            "shortname": "MbInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Form",
+            "namespace": "",
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 9,
+            "description": "短信输入规则",
+            "type": "",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "placeholder",
+                    "description": "placeholder文案，默认：'**手机号码**'；",
+                    "type": "String"
+                },
+                {
+                    "name": "enableDelete",
+                    "description": "是否允许删除，默认：false；",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "selected",
+                    "description": "默认选择：{nm:'CN',value:'86'}；",
+                    "type": "Object"
+                },
+                {
+                    "name": "open",
+                    "description": "open；",
+                    "type": "Boolean"
+                }
+            ]
         }
     },
-    "classitems": [],
+    "classitems": [
+        {
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 33,
+            "description": "初始化参数",
+            "itemtype": "method",
+            "name": "config",
+            "class": "MbInput",
+            "module": "Form"
+        },
+        {
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 46,
+            "description": "初始化",
+            "itemtype": "method",
+            "name": "init",
+            "class": "MbInput",
+            "module": "Form"
+        },
+        {
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 62,
+            "description": "select事件",
+            "itemtype": "event",
+            "name": "on-select",
+            "class": "MbInput",
+            "module": "Form"
+        },
+        {
+            "file": "field/ui/mbinput/mbinput.js",
+            "line": 66,
+            "description": "onSelect事件方法",
+            "itemtype": "method",
+            "name": "onSelect",
+            "class": "MbInput",
+            "module": "Form"
+        },
+        {
+            "file": "field/util/input/input.js",
+            "line": 70,
+            "itemtype": "property",
+            "name": "sender 事件发送对象",
+            "type": "Object",
+            "class": "",
+            "module": "Form",
+            "subprops": [
+                {
+                    "name": "trigger",
+                    "description": "验证触发方式",
+                    "type": "String"
+                },
+                {
+                    "name": "success",
+                    "description": "验证是否通过",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "message",
+                    "description": "验证不通过时的消息",
+                    "type": "String"
+                },
+                {
+                    "name": "firstRule",
+                    "description": "第一条验证不通过的规则",
+                    "type": "Object"
+                }
+            ]
+        }
+    ],
     "warnings": [
         {
             "message": "unknown tag: content",
-            "line": " input/code/ui/regularTest.js:8"
-        },
-        {
-            "message": "unknown tag: demo",
-            "line": " input/code/ui/regularTest.js:8"
+            "line": " field/base/rules.js:29"
         },
         {
             "message": "unknown tag: show",
-            "line": " input/code/ui/regularTest.js:8"
-        },
-        {
-            "message": "unknown tag: content",
-            "line": " input/code/ui/regularTest2.js:2"
-        },
-        {
-            "message": "unknown tag: demo",
-            "line": " input/code/ui/regularTest2.js:2"
-        },
-        {
-            "message": "unknown tag: show",
-            "line": " input/code/ui/regularTest2.js:2"
+            "line": " field/base/rules.js:29"
         }
     ]
 }

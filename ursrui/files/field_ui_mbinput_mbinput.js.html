@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>field/ui/mbinput/mbinput.js - URS UI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://g.hz.netease.com/urs-front/urs-ui">
+             
+            <img alt="URS UI" src="../assets/css/logo.png" title="URS UI">
+            
+                URS UI
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href=""></a>
+                    </li>
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="Search for API" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>Modules/Classes</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to filter Modules/Classes">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/Form.html">Form</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/MbInput.html">MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/ValidateRules.html">ValidateRules</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/sms.html">sms</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/captcha.html">captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>field/ui/mbinput/mbinput.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+/**
+ Form表单；
+ * 表单组件；
+ @module Form
+ @constructor
+ */
+
+
+/**
+ * 短信输入规则
+ * @class MbInput
+ * @type
+ * @constructor
+ * @param  {String} placeholder  placeholder文案，默认：&#x27;**手机号码**&#x27;；
+ * @param  {Boolean} enableDelete  是否允许删除，默认：false；
+ * @param  {Object} selected  默认选择：{nm:&#x27;CN&#x27;,value:&#x27;86&#x27;}；
+ * @param  {Boolean} open open；
+ */
+
+
+import &#x27;./mbinput.scss&#x27;
+import tpl from &#x27;./mbinput.rgl&#x27;
+
+var Validation = require(&#x27;rgui-ui-field&#x27;).Validation;
+var Base = require(&#x27;../input/input&#x27;);
+var ListView = require(&#x27;../../../listview/listview&#x27;);
+var Item = require(&#x27;../../../listview/item/item&#x27;);
+var Dom = require(&#x27;regularjs&#x27;).dom;
+
+var MbInput = Base.extend({
+    name: &#x27;MbInput&#x27;,
+    template: tpl,
+    /**
+     * 初始化参数
+     * @method config
+     */
+    config() {
+        this.defaults({
+            placeholder: &#x27;手机号码&#x27;,
+            enableDelete: false,
+            selected: {nm:&#x27;CN&#x27;,value:&#x27;86&#x27;},
+            open: false
+        });
+        this.supr();  
+    },
+    /**
+     * 初始化
+     * @method init
+     */
+    init() {
+         Dom.on(document, &#x27;click&#x27;, (e) =&gt; {
+            var element = this.$refs.trigger;
+            var element2 = e.target;
+            while(element2) {
+                if(element == element2)
+                    return;
+                element2 = element2.parentElement;
+            }
+            this.toggle(false);
+        })
+    },
+    /**
+     * select事件
+     * @event on-select
+     * */
+    /**
+     * onSelect事件方法
+     * @method onSelect
+     */
+    onSelect (_data){
+        this.data.selected = {nm:_data.selected.data.nm,value:_data.value};
+        this.$update();
+        this.toggle(false);
+    },
+    toggle (_open){
+        this.data.open = _open;
+        this.$update();
+    }
+});
+
+module.exports = MbInput;
+
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

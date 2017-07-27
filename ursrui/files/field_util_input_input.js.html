@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>field/util/input/input.js - URS UI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://g.hz.netease.com/urs-front/urs-ui">
+             
+            <img alt="URS UI" src="../assets/css/logo.png" title="URS UI">
+            
+                URS UI
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href=""></a>
+                    </li>
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="Search for API" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>Modules/Classes</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to filter Modules/Classes">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/Form.html">Form</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/MbInput.html">MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/ValidateRules.html">ValidateRules</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/sms.html">sms</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/captcha.html">captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>field/util/input/input.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+/*
+ * 基础组件-Input-Util，改编自regularui-input
+ * @auth hzhuangdi(hzhuangdi@corp.netease.com)
+ */
+var Validation = require(&#x27;rgui-ui-field&#x27;).Validation;
+
+import Base from &#x27;../../../base/component&#x27;;
+
+var bowser = require(&#x27;bowser&#x27;);
+
+new Base();
+
+var Input = Base.extend({
+    config() {
+        this.defaults({
+            value: &#x27;&#x27;,
+            type: &#x27;text&#x27;,
+            name: &#x27;&#x27;,
+            disabled: false,
+            placeholder: &#x27;&#x27;,
+            size:&#x27;large&#x27;,
+            state: &#x27;&#x27;,
+            tip:&#x27;&#x27;,
+            _tip:&#x27;&#x27;,
+            enableDelete: false,
+            rules: [],
+            _eltIE9: bowser.msie &amp;&amp; bowser.version &lt;= 9
+        });
+        this.supr();  
+        // 查找validation，修正$outer
+        // TODO $outer不是validation的情况下，是否要修正$outer？
+        let $outer = this.$outer;
+        while ($outer) {
+            if ($outer instanceof Validation) {
+            $outer.fields.push(this);
+            break;
+            }
+            $outer = $outer.$outer;
+        }
+    },
+    destroy() {
+        if (this.$outer &amp;&amp; this.$outer instanceof Validation) {
+            // 从$outer组件的列表中删除自己
+            const index = this.$outer.fields.indexOf(this);
+            ~index &amp;&amp; this.$outer.fields.splice(index, 1);
+        }
+        this.supr();
+    },
+    validate(trigger = &#x27;submit&#x27;) {
+
+        const value = this.data.value;
+        const rules = this.data.rules.filter((rule) =&gt; (rule.trigger + &#x27;+submit&#x27;).includes(trigger));
+
+        // this.data._state = this.data.state = &#x27;validating&#x27;;
+        // 先不维护_state
+        this.data.state = &#x27;validating&#x27;;
+
+        Validation.validate(value, rules, (result) =&gt; {
+            if (result.firstRule &amp;&amp; !(result.firstRule.mute || &#x27;&#x27;).includes(trigger))
+                // @TODO tip根据结果？
+                this.data._tip = result.message;
+            else
+                this.data._tip = &#x27;&#x27;;
+            // 先不维护_state
+            // this.data._state = this.data.state = result.success ? &#x27;success&#x27; : &#x27;error&#x27;;
+            this.data.state = result.success ? &#x27;success&#x27; : &#x27;error&#x27;;
+            
+            this.$update();
+
+            /**
+             * @event validate 验证表单域时触发
+             * @property {object} sender 事件发送对象
+             * @property {string} trigger 验证触发方式
+             * @property {boolean} success 验证是否通过
+             * @property {string} message 验证不通过时的消息
+             * @property {object} firstRule 第一条验证不通过的规则
+             */
+            this.$emit(&#x27;validate&#x27;, Object.assign({
+                sender: this,
+                trigger,
+            }, result));
+        });
+    },
+    focus() {
+        this.$refs.input.focus();
+    },
+    blur() {
+        this.$refs.input.blur();
+    },
+    showError(_tip) {
+        this.data.state = &#x27;error&#x27;;
+        this.data._tip = _tip;
+    },
+    clearError() {
+        if(this.data.state === &#x27;error&#x27;){
+            this.data.state = &#x27;&#x27;;
+            this.data._tip = this.data.tip;
+        }
+    },
+    _onFocus(_event) {
+        this.$emit(&#x27;focus&#x27;,_event);
+    },
+    _onBlur(_event) {
+        this.$emit(&#x27;blur&#x27;,_event);
+        // blur时为空则不校验，逻辑卸载这里？
+        if(this.data.value === &#x27;&#x27;){
+            return;
+        }
+        // TODO Blur校验
+        this.validate(&#x27;blur&#x27;);
+    },
+    _onInput(_event){
+        this.clearError();
+        this.$emit(&#x27;input&#x27;, _event);
+        // TODO _compositionInputing处理
+        // setTimeout(() =&gt; !this.data._compositionInputing &amp;&amp; this.validate(&#x27;input&#x27;));
+        this.validate(&#x27;input&#x27;);
+    },
+    _onDelete(_event){
+        this.data.value = &#x27;&#x27;;
+        this.clearError();
+    }
+});
+
+module.exports = Input;
+
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

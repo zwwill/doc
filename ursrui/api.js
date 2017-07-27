@@ -1,23 +1,35 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
-        "TestDemo",
-        "TestDemo2"
+        "MbInput",
+        "captcha",
+        "sms"
     ],
     "modules": [
-        "URS UI"
+        "Form",
+        "ValidateRules"
     ],
     "allModules": [
         {
-            "displayName": "URS UI",
-            "name": "URS UI",
-            "description": "URS基础组件Test；\n* 提供了example的html与js实例；\n* example中引用了Regular",
+            "displayName": "Form",
+            "name": "Form",
+            "description": "Form表单；\n* 表单组件；",
             "classes": [
                 {
-                    "name": "TestDemo"
+                    "name": "MbInput"
+                }
+            ]
+        },
+        {
+            "displayName": "ValidateRules",
+            "name": "ValidateRules",
+            "description": "ValidateRules 默认输入组件规则；\n* 数组形式；",
+            "classes": [
+                {
+                    "name": "sms"
                 },
                 {
-                    "name": "TestDemo2"
+                    "name": "captcha"
                 }
             ]
         }
