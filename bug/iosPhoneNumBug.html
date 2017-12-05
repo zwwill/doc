@@ -9,7 +9,7 @@
 	function show(){
 		var val = document.getElementById('tst').value;
 		val = val.replace(/./g,function(e){
-			var c = ""+e.charCodeAt(0);
+			var c = e.charCodeAt(0).toString(16);
 			return ' \\u0000'.match(new RegExp("(\.*)\\d{"+c.length+"}"))[1]+c;
 		})
 		document.getElementById('dtl').innerHTML = val;
