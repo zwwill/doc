@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IOS 11</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<script>
+	function show(){
+		var val = document.getElementById('tst').value;
+		val = val.replace(/./g,function(e){
+			var c = ""+e.charCodeAt(0);
+			return ' \\u0000'.match(new RegExp("(\.*)\\d{"+c.length+"}"))[1]+c;
+		})
+		document.getElementById('dtl').innerHTML = val;
+	}
+</script>
+<style>
+	label{
+		display: block;
+		margin: 20px 0;
+	}
+	input{
+		height: 40px;
+		width: 100%;
+		border: solid 1px #999;
+		box-sizing: border-box;
+		font-size: 16px;
+	}
+	button{
+		height: 40px;
+		width: 100%;
+		background: #999;
+		color: #fff;
+		margin: 12px 0;
+	}
+	#dtl{
+		word-wrap: break-word;
+	}
+</style>
+<body>
+	<label for="tst">copy a phone number from contacts</label>
+	<input id="tst" type="text" placeholder="number">
+	<button onclick="show()">show detail</button>
+	<div id="dtl"></div>
+</body>
+</html>
