@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ifm1</title>
+</head>
+<script>
+	window.onmessage = function(e){
+		document.getElementsByTagName('body')[0].append(e.data+" | ");
+		e.source.postMessage('callback form ifm1','*');
+	}
+</script>
+<body>
+ifm1
+<hr>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>cross</title>
+</head>
+<script>
+	window.onmessage = function(e){
+		document.getElementsByTagName('body')[0].append(e.data+" | ");
+	}
+</script>
+<body>
+	<iframe id="ifm1" src="ifm1.html" frameborder="1"></iframe>
+	<iframe id="ifm2" src="ifm2.html" frameborder="1"></iframe>
+	<hr>
+	<button onclick="send1()">向 ifm1 发信息【*】</button>
+	<button onclick="send2()">向 ifm2 发信息【10.242.69.181】</button>
+	<button onclick="send3()">向 ifm2 发信息【10.242.69.181:8089】</button>
+	<br>
+</body>
+<script>
+
+var ifm1 = document.getElementById("ifm1").contentWindow;
+var ifm2 = document.getElementById("ifm2").contentWindow;
+
+function send1(){
+	ifm1.postMessage("msg form top", "*");
+}
+function send2(){
+	ifm2.postMessage("msg form top", "http://10.242.69.181");
+}
+function send3(){
+	ifm2.postMessage("msg form top", "http://10.242.69.181:8089");
+}
+</script>
+</html>

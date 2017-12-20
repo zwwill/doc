@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+#div1,#div2  {width:198px; min-height:66px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+</head>
+<body>
+
+<p>把图片拖放到矩形中：</p>
+
+<div id="div1" ondrop="drop(event)" ondragenter="dragenter1(event)" ondragover="ondragover1(event)">拖拽图片到此</div>
+<br />
+<img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondragstart="dragstart(event)" />
+<div id="div2" ondrop="drop2(event)" ondragenter="dragenter2(event)" ondragleave="ondragleave2(event)" ondragover="ondragover2(event)">拖拽本地图片到此</div>
+
+<br>
+
+<script type="text/javascript">
+    document.ondragover = function(ev){
+        ev.preventDefault();
+    };
+    document.ondrop = function(ev){
+        ev.preventDefault();
+    };
+
+    /* ======= d1 ======= */
+    function dragstart(ev)
+    {
+        ev.dataTransfer.setData("Text",ev.target.id);
+    }
+    function dragenter1(ev) {
+        ev.dataTransfer.dropEffect = 'copy';
+    }
+    function ondragover1(ev)
+    {
+        ev.stopPropagation();
+        ev.preventDefault();
+    }
+
+    function drop(ev){
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+
+
+    /* ======= d2 ======= */
+    function dragenter2(ev) {
+
+        console.log(ev)
+        console.log("dragenter");
+        ev.dataTransfer.dropEffect = 'copy';
+        document.getElementById('div2').style.backgroundColor = "#ddd";
+    }
+    function ondragover2(ev)
+    {
+        ev.stopPropagation();
+        ev.preventDefault();
+        if(!window.F) {
+            window.F = true;
+            console.log("dragover");
+            ev.dataTransfer.dropEffect = 'copy';
+        }
+    }
+
+    function ondragleave2(ev) {
+        console.log("dragleave");
+        document.getElementById('div2').style.backgroundColor = "";
+    }
+
+
+    function drop2(ev) {
+        ev.preventDefault();
+        var fs = ev.dataTransfer.files;
+        console.log(fs)
+        for (var i = 0, f; f = fs[i]; i++) {
+
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var span = document.createElement('span');
+
+                span.innerHTML = `<img src="${e.target.result}" />`;
+
+                document.getElementById('div2').insertBefore(span, null);
+            };
+
+            reader.readAsDataURL(f);
+        }
+    }
+
+</script>
+</body>
+</html>
