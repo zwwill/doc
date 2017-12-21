@@ -9,9 +9,9 @@
 
 <p>把图片拖放到矩形中：</p>
 
-<div id="div1" ondrop="drop(event)" ondragenter="dragenter1(event)" ondragover="ondragover1(event)">拖拽图片到此</div>
+<div id="div1" ondrop="drop(event)" ondragenter="dragenter1(event)"  ondragleave="dragleave1(event)"  ondragend="ondragend1(event)" ondragover="ondragover1(event)">拖拽图片到此</div>
 <br />
-<img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondragstart="dragstart(event)" />
+<img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondrag="drag1(event)"  ondragstart="dragstart(event)" />
 <div id="div2" ondrop="drop2(event)" ondragenter="dragenter2(event)" ondragleave="ondragleave2(event)" ondragover="ondragover2(event)">拖拽本地图片到此</div>
 
 <br>
@@ -19,28 +19,50 @@
 <script type="text/javascript">
     document.ondragover = function(ev){
         ev.preventDefault();
+//        console.log('document-dragover')
+        ev.dataTransfer.dropEffect = 'none';
     };
     document.ondrop = function(ev){
         ev.preventDefault();
+        console.log('document-drop')
     };
 
     /* ======= d1 ======= */
     function dragstart(ev)
     {
+        console.log('dragstart')
         ev.dataTransfer.setData("Text",ev.target.id);
+        ev.dataTransfer.setData("URL","http://id.163.com");
+    }
+    function drag1(ev)
+    {
+        console.log('drag')
     }
     function dragenter1(ev) {
-        ev.dataTransfer.dropEffect = 'copy';
+        console.log('dragenter')
     }
     function ondragover1(ev)
     {
         ev.stopPropagation();
         ev.preventDefault();
+        console.log('dragover')
+    }
+
+    function dragleave1(ev)
+    {
+        console.log('dragleave')
+    }
+
+    function ondragend1(ev)
+    {
+        console.log('dragend')
     }
 
     function drop(ev){
+        console.log('drop')
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
+        console.log(ev.dataTransfer.getData("URL"));
         ev.target.appendChild(document.getElementById(data));
     }
 
@@ -48,20 +70,16 @@
     /* ======= d2 ======= */
     function dragenter2(ev) {
 
-        console.log(ev)
+//        console.log(ev)
         console.log("dragenter");
-        ev.dataTransfer.dropEffect = 'copy';
         document.getElementById('div2').style.backgroundColor = "#ddd";
     }
     function ondragover2(ev)
     {
         ev.stopPropagation();
         ev.preventDefault();
-        if(!window.F) {
-            window.F = true;
-            console.log("dragover");
-            ev.dataTransfer.dropEffect = 'copy';
-        }
+        console.log("dragover");
+        ev.dataTransfer.dropEffect = 'copy';
     }
 
     function ondragleave2(ev) {
@@ -88,6 +106,7 @@
 
             reader.readAsDataURL(f);
         }
+        document.getElementById('div2').style.backgroundColor = "";
     }
 
 </script>
