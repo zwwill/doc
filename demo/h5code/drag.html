@@ -30,7 +30,8 @@
     /* ======= d1 ======= */
     function dragstart(ev)
     {
-        console.log('dragstart')
+        ev.dataTransfer.effectAllowed = 'all';
+        console.log('dragstart');
         ev.dataTransfer.setData("Text",ev.target.id);
         ev.dataTransfer.setData("URL","http://id.163.com");
     }
@@ -39,6 +40,7 @@
         console.log('drag')
     }
     function dragenter1(ev) {
+        ev.dataTransfer.dropEffect = 'link';
         console.log('dragenter')
     }
     function ondragover1(ev)
