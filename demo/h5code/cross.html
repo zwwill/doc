@@ -24,6 +24,7 @@ var ifm1 = document.getElementById("ifm1").contentWindow;
 var ifm2 = document.getElementById("ifm2").contentWindow;
 
 function send1(){
+    console.log(Date.now());
 	ifm1.postMessage("msg form top", "*");
 }
 function send2(){

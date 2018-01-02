@@ -19,7 +19,10 @@
 <img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif"
      draggable="true"
      ondrag="drag1(event)"
-     ondragstart="dragstart(event)" />
+     ondragstart="dragstart(event)"
+     ondragend="ondragend1(event)"
+
+/>
 
 <div id="div2"
      ondrop="drop2(event)"
@@ -94,7 +97,7 @@
         ev.stopPropagation();
         ev.preventDefault();
         console.log("dragover");
-        ev.dataTransfer.dropEffect = 'copy';
+        ev.dataTransfer.dropEffect = 'move';
     }
 
     function ondragleave2(ev) {

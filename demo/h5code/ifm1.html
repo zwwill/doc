@@ -6,6 +6,7 @@
 </head>
 <script>
 	window.onmessage = function(e){
+	    console.log(Date.now());
 		document.getElementsByTagName('body')[0].append(e.data+" | ");
 		e.source.postMessage('callback form ifm1','*');
 	}
