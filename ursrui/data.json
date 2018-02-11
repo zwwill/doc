@@ -1,0 +1,2786 @@
+{
+    "project": {
+        "name": "URS RUI",
+        "description": "<h1>URS Regular UI Component Doc</h1><p>网易URS，Regular通用组件及UI交互规范</p><br/><h2>安装</h2><pre><code>nenpm install --save @netease/urs-rui</code><br>//如果第一次使用nenpm，进入<a target=\"_blank\" href=\"http://npm.hz.netease.com/\">http://npm.hz.netease.com/</a></pre><h2>浏览器支持</h2><table class=\"table\" style=\"width:500px\"><thead><tr><th><a><img src=\"http://www.w3school.com.cn/ui2017/compatible_chrome.png\" alt=\"Chrome\" style=\"max-width:100%;\"></a></th><th><a><img src=\"http://www.w3school.com.cn/ui2017/compatible_firefox.png\" alt=\"Chrome\" style=\"max-width:100%;\"></a></th><th><a><img src=\"http://www.w3school.com.cn/ui2017/compatible_ie.png\" alt=\"Chrome\" style=\"max-width:100%;\"></a></th><th><a><img src=\"http://www.w3school.com.cn/ui2017/compatible_safari.png\" alt=\"Chrome\" style=\"max-width:100%;\"></a></th><th><a><img src=\"http://www.w3school.com.cn/ui2017/compatible_opera.png\" alt=\"Chrome\" style=\"max-width:100%;\"></a></th></tr></thead><tbody><tr><td>Latest ✔</td><td>Latest ✔</td><td> IE8 +</td><td>Latest ✔</td><td>Latest ✔</td></tr></tbody></table><h2>文档</h2><p><a href=\"http://10.165.124.68/urs-rui/doc/\">http://10.165.124.68/urs-rui/doc/</a>(内网限制，请链接b集群VPN)</p><h2>调试开发</h2><pre><code>npm run dev</code></pre><h2>doc打包</h2><pre><code>npm run pro</code></pre><h2>doc发布</h2><pre><code>scp -P 20159 -r ./doc/* root@10.165.124.68:/home/fe/urs-rui/doc</code></pre><h2>npm发布</h2><pre><code>nenpm publish</code></pre>",
+        "version": "0.0.7",
+        "url": "/urs-rui/doc/",
+        "logo": "./assets/img/logo.png",
+        "navs": [
+            {
+                "name": "URS UI规范",
+                "url": "/urs-rui/doc/ui-standard/index.html"
+            },
+            {
+                "name": "GitLab",
+                "url": "https://g.hz.netease.com/urs-front/urs-rui"
+            },
+            {
+                "name": "NPM",
+                "url": "http://npm.hz.netease.com/package/@netease/urs-rui"
+            }
+        ]
+    },
+    "files": {
+        "src/unit/bAlert/bAlert.js": {
+            "name": "src/unit/bAlert/bAlert.js",
+            "modules": {},
+            "classes": {
+                "Alert": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bButton/bButton.js": {
+            "name": "src/unit/bButton/bButton.js",
+            "modules": {},
+            "classes": {
+                "Button": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bCaptcha/bCaptcha.js": {
+            "name": "src/unit/bCaptcha/bCaptcha.js",
+            "modules": {},
+            "classes": {
+                "Captcha": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bGotop/bGotop.js": {
+            "name": "src/unit/bGotop/bGotop.js",
+            "modules": {},
+            "classes": {
+                "Gotop": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bInput/bInput.js": {
+            "name": "src/unit/bInput/bInput.js",
+            "modules": {},
+            "classes": {
+                "bInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bListView/bListView.js": {
+            "name": "src/unit/bListView/bListView.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bLoading/bLoading.js": {
+            "name": "src/unit/bLoading/bLoading.js",
+            "modules": {},
+            "classes": {
+                "Loading": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bMenu/bMenu.js": {
+            "name": "src/unit/bMenu/bMenu.js",
+            "modules": {
+                "Unit": 1
+            },
+            "classes": {
+                "Menu": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bPager/bPager.js": {
+            "name": "src/unit/bPager/bPager.js",
+            "modules": {},
+            "classes": {
+                "Pager": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bQuest/bQuest.js": {
+            "name": "src/unit/bQuest/bQuest.js",
+            "modules": {},
+            "classes": {
+                "Quest": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bSelect/bSelect.js": {
+            "name": "src/unit/bSelect/bSelect.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bSelectInput/bSelectInput.js": {
+            "name": "src/unit/bSelectInput/bSelectInput.js",
+            "modules": {},
+            "classes": {
+                "SelectInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bSlide/bSlide.js": {
+            "name": "src/unit/bSlide/bSlide.js",
+            "modules": {},
+            "classes": {
+                "Slide": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bTab/bTab.js": {
+            "name": "src/unit/bTab/bTab.js",
+            "modules": {},
+            "classes": {
+                "Tab": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/bToast/bToast.js": {
+            "name": "src/unit/bToast/bToast.js",
+            "modules": {},
+            "classes": {
+                "Toast": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/base/base.js": {
+            "name": "src/unit/base/base.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/base/errorHandler.js": {
+            "name": "src/unit/base/errorHandler.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/unit/base/filter.js": {
+            "name": "src/unit/base/filter.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/module/bH5MbInput/bH5MbInput.js": {
+            "name": "src/module/bH5MbInput/bH5MbInput.js",
+            "modules": {},
+            "classes": {
+                "H5MbInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/module/bH5Tab/bH5Tab.js": {
+            "name": "src/module/bH5Tab/bH5Tab.js",
+            "modules": {},
+            "classes": {
+                "H5Tab": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/module/bMbInput/bMbInput.js": {
+            "name": "src/module/bMbInput/bMbInput.js",
+            "modules": {
+                "Module": 1
+            },
+            "classes": {
+                "bMbInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/module/bPwdInput/bPwdInput.js": {
+            "name": "src/module/bPwdInput/bPwdInput.js",
+            "modules": {},
+            "classes": {
+                "PwdInput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/module/smsinput/smsinput.js": {
+            "name": "src/module/smsinput/smsinput.js",
+            "modules": {},
+            "classes": {
+                "SmsInput[待整理]": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/scss/bCommon.js": {
+            "name": "src/scss/bCommon.js",
+            "modules": {
+                "Sass": 1
+            },
+            "classes": {
+                "bCommon.scss": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/scss/config.js": {
+            "name": "src/scss/config.js",
+            "modules": {},
+            "classes": {
+                "_config.scss": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Unit": {
+            "name": "Unit",
+            "submodules": {},
+            "classes": {
+                "Alert": 1,
+                "Button": 1,
+                "Captcha": 1,
+                "Gotop": 1,
+                "bInput": 1,
+                "Loading": 1,
+                "Menu": 1,
+                "Pager": 1,
+                "Quest": 1,
+                "SelectInput": 1,
+                "Slide": 1,
+                "Tab": 1,
+                "Toast": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "main",
+            "file": "src/unit/bToast/bToast.js",
+            "line": 2,
+            "description": "**单元组件 - hover menu菜单[bMenu]**<br>\n基础的bMenu封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bMenu/bMenu.js')\n```\n```\n【组件标签】\n<bMenu title=\"ddd_sh123@163.com\" open={isLogin} source={menuList} on-click={this.clickMenu($event)} on-select={this.onMenu($event)}></bMenu>\n\n```",
+            "itemtype": "main"
+        },
+        "Module": {
+            "name": "Module",
+            "submodules": {},
+            "classes": {
+                "H5MbInput": 1,
+                "H5Tab": 1,
+                "bMbInput": 1,
+                "PwdInput": 1,
+                "SmsInput[待整理]": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "main",
+            "file": "src/module/smsinput/smsinput.js",
+            "line": 1,
+            "description": "**单元组件 - 国际手机号输入框[bMbInput],继承自基础输入组件bInput**<br>\n国际手机号输入框封装组件<br>\n支持国际手机号输入框组件样式、校验国际手机号、报错提示、清空输入框等功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/module/bMbInput/bMbInput.js')\n```\n```\n【组件标签】\n<bMbInput />\n\n```",
+            "itemtype": "main"
+        },
+        "Sass": {
+            "name": "Sass",
+            "submodules": {},
+            "classes": {
+                "bCommon.scss": 1,
+                "_config.scss": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/scss/config.js",
+            "line": 5,
+            "description": "**SASS common文件**<br>\n包含reset样式和组件公用样式\n**使用方法：**<br>\n```\n【引用方法】\nrequire(\"@netease/urs-rui/src/scss/bCommon.scss\");\n```"
+        }
+    },
+    "classes": {
+        "Alert": {
+            "name": "Alert",
+            "shortname": "Alert",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 1,
+            "description": "**单元组件 - alert弹框[bAlert]**<br>\n基础的bAlert封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nimport bAlert from 'urs-rui/src/unit/bAlert/bAlert.js';\n```\n```\n【组件标签】\nbAlert.show({\n           title:'提示', // 可传空，不显示tilte\n           content:'<p style=\"color:red;\">你好</p>',\n           cancelBtn:'取消'\n       }, this.ok.bind(this), \n       this.cancel.bind(this)\n   )\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<button class=\"u-button\" on-click={this.click()} >点击弹框</button>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    click() {\n\t        URSRUI.bAlert.show({\n\t            title:'提示', // 可传空，不显示tilte\n\t            content:'<p style=\"color:red;\">你好</p>',\n\t            cancelBtn:'取消'\n\t        }, ()=>{alert('ok')}, ()=>{alert('cancel')})\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "alert"
+            ],
+            "is_constructor": 1,
+            "show": true,
+            "author": "hzjiangchuanhua@corp.netease.com"
+        },
+        "Button": {
+            "name": "Button",
+            "shortname": "Button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bButton/bButton.js",
+            "line": 2,
+            "description": "**单元组件 - 按钮[Button]**<br>\n基础的按钮封装组件<br>\n支持按钮上锁、loading、倒计时功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/button/button.js')\n```\n```\n【组件标签】\n<bButton clazz=\"bButton-sms f-fl\" enableTip=\"获取验证码\"></bButton>\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bButton></bButton>';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bButton ref=btn enableTip=\"点击锁定\" on-countbegin={this.ll(\"计时开始\",$event)} on-countend={this.ll(\"计时结束\",$event)} count=3 on-click={this.lock()}></bButton>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    init:function () {\n\t\n\t    },\n\t    lock:function () {\n\t        if(!this.ft){\n\t            alert(\"锁定事件已经启动，请开启控制台【Ctrl+Shift+j(i)】或【option+command+i】观察效果\");\n\t            this.ft = true;\n\t        }\n\t\n\t        this.$refs.btn.setLock({count:1});\n\t    },\n\t    ll:function(info,event){\n\t        console.log('info:'+info);\n\t        console.log('event:');\n\t        console.log(event);\n\t    }\n\t}).$inject('#app');\n\t\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bButton ref=btn enableTip=\"点击Loading\" on-click={this.loading()}></bButton>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    init:function () {\n\t\n\t    },\n\t    loading:function () {\n\t        this.$refs.btn.setLock({loading:1});\n\t        setTimeout(function () {\n\t            this.$refs.btn.unLock();\n\t        }.bind(this),2000)\n\t    }\n\t}).$inject('#app');\n\t\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "可用状态",
+                "锁定状态",
+                "Loading状态"
+            ],
+            "show": true,
+            "author": "黄笛",
+            "revise": "调整对外API，去掉可重置状态时文字（回归enableTip） [2017-09-25] [黄笛]"
+        },
+        "Captcha": {
+            "name": "Captcha",
+            "shortname": "Captcha",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 1,
+            "description": "**单元组件 - 验证码[Captcha]**<br>\n基础的验证码封装组件<br>\n支持滑块验证码，点击式验证码功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bCaptcha/bCaptcha.js')\n```\n```\n【组件标签】\n<bCaptcha clazz=\"u-ipt\" ref=bCaptcha captchaType={capType}></bCaptcha>\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t<style>\n\t    #app{\n\t        padding: 150px 0 10px;\n\t    }\n\t</style>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bCaptcha on-validate={this.onValidate($event)} clazz=\"u-ipt\" ref=bCaptcha captchaType=2></bCaptcha>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    onValidate:function(result){\n\t        alert(result.result);\n\t        alert(this.$refs.bCaptcha.getPwd());\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\tw",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t<style>\n\t    #app{\n\t        padding: 150px 0 10px;\n\t    }\n\t</style>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bCaptcha on-validate={this.onValidate($event)} clazz=\"u-ipt\" ref=bCaptcha captchaType=3></bCaptcha>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    onValidate:function(result){\n\t        alert(result.result);\n\t        alert(this.$refs.bCaptcha.getPwd());\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t        \n\t        ",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t<style>\n\t    #app{\n\t        padding: 150px 0 10px;\n\t    }\n\t</style>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bCaptcha on-validate={this.onValidate($event)} clazz=\"u-ipt\" mode=\"emit\" ref=bCaptcha captchaType=2></bCaptcha>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    onValidate:function(result){\n\t        alert(result.result);\n\t        alert(this.$refs.bCaptcha.getPwd());\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "滑块验证码",
+                "点击式验证码",
+                "嵌入式"
+            ],
+            "show": true,
+            "author": "cheng-lin@corp.netease.com"
+        },
+        "Gotop": {
+            "name": "Gotop",
+            "shortname": "Gotop",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bGotop/bGotop.js",
+            "line": 1,
+            "description": "**单元组件 - 回到顶部[bGotop]**<br>\n基础的bGotop封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nimport GoTop from 'urs-rui/src/unit/bGotop/bGotop.js';\n```\n```\n【组件标签】\nnew GoTop().$inject(document.body);\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "example": [
+                "\t<html>\n\t<div>引用方式如下所示：</div>\n\t<p>import GoTop from 'urs-rui/src/unit/bGotop/bGotop.js'</p>\n\t<p>new GoTop().$inject(document.body);</p>\n\t\n\t</html>\n\t\n\t<script>\n\t\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "可用状态"
+            ],
+            "is_constructor": 1,
+            "show": true,
+            "author": "hzjiangchuanhua@corp.netease.com"
+        },
+        "bInput": {
+            "name": "bInput",
+            "shortname": "bInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bInput/bInput.js",
+            "line": 1,
+            "description": "**单元组件 - 基础输入框[bInput]**<br>\n基础的输入框封装组件<br>\n支持输入、校验、报错提示、清空输入框等功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bInput/bInput.js')\n```\n```\n【组件标签】\n<bInput />\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bInput></bInput>';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "带删除按钮"
+            ],
+            "show": true,
+            "author": "黄笛",
+            "revise": "注释撰写 [2017-08-28] [黄笛]"
+        },
+        "Loading": {
+            "name": "Loading",
+            "shortname": "Loading",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "file": "src/unit/bLoading/bLoading.js",
+            "line": 2,
+            "description": "**单元组件 - Loading[bLoading]**<br>\n基础的Loading封装组件<br>\n有多种样式<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('@netease/urs-rui/src/unit/bLoading/bLoading.js')\n```\n```\n【组件标签】\n<bLoading />\n\n```",
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bLoading />';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bLoading type=\"2\" />';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bLoading ref=loading />';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    init:function () {\n\t        this.startLoading();\n\t    },\n\t    startLoading:function () {\n\t        this.$refs.loading.show();\n\t        setTimeout(function () {\n\t            this.$refs.loading.end();\n\t            setTimeout(function () {\n\t                this.startLoading();\n\t            }.bind(this),1000);\n\t        }.bind(this),2000);\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "样式1",
+                "样式2",
+                "Loading的关闭和启动"
+            ],
+            "show": true,
+            "author": "张威",
+            "revise": "注释撰写 [2017-08-15] [张威]"
+        },
+        "Menu": {
+            "name": "Menu",
+            "shortname": "Menu",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 1,
+            "description": "**单元组件 - hover menu菜单[bMenu]**<br>\n基础的bMenu封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bMenu/bMenu.js')\n```\n```\n【组件标签】\n<bMenu title=\"ddd_sh123@163.com\" open={isLogin} source={menuList} on-click={this.clickMenu($event)} on-select={this.onMenu($event)}></bMenu>\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bMenu title=\"ddd_sh123@163.com\" open={open} source={menuList} on-click={this.clickMenu($event)} on-select={this.onMenu($event)}></bMenu>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    data:{\n\t        open: true,\n\t        menuList:[{\n\t            name:'个人中心',\n\t        }, {\n\t            name: '退出'\n\t        }]\n\t    },\n\t    clickMenu(e) {\n\t        alert('click the menu head');\n\t    },\n\t    onMenu(e) {\n\t        alert('click the item: '+e.name);\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "Menu"
+            ],
+            "is_constructor": 1,
+            "show": true,
+            "author": "hzjiangchuanhua@corp.netease.com"
+        },
+        "Pager": {
+            "name": "Pager",
+            "shortname": "Pager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bPager/bPager.js",
+            "line": 1,
+            "description": "**单元组件 - 翻页器[bPager]**<br>\n基础的bPager封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bPager/bPager.js')\n```\n```\n【组件标签】\n<bPager clazz=\"m-page\" ref=bPager total={total} limit={limit} currentPage={currentPage} on-page={this.onPage($event)}></bPager>\n\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t<style>\r\n\t    .f-clr{\r\n\t        zoom:1;\r\n\t    }\r\n\t    .f-clr:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:\".\";}\r\n\t</style>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\tvar tpl =\r\n\t    '<bPager clazz=\"m-page\" total={total} currentPage={currentPage} limit={limit} step={step} ref=bPager on-page={this.onPage($event)}></bPager>'\r\n\tnew URSRUI.Component({\r\n\t    template: tpl,\r\n\t    data:{\r\n\t        total:100,\r\n\t        limit:10,\r\n\t        step:[2,3,2],\r\n\t        currentPage:2\r\n\t    },\r\n\t    init:function(){\r\n\t        setTimeout(function(){\r\n\t            // this.$refs.bPager.setPage(9);\r\n\t        }.bind(this),2000);\r\n\t    },\r\n\t    onPage:function(result){\r\n\t        console.log(result.currentPage);\r\n\t        this.data.currentPage = result.currentPage;\r\n\t        this.$refs.bPager.updatePage(this.data);\r\n\t    }\r\n\t}).$inject('#app');\r\n\t</script>\r\n\t    \r\n\t            "
+            ],
+            "exampleTitles": [
+                "Pager"
+            ],
+            "show": true,
+            "author": "cheng-lin@corp.netease.com"
+        },
+        "Quest": {
+            "name": "Quest",
+            "shortname": "Quest",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bQuest/bQuest.js",
+            "line": 1,
+            "description": "**单元组件 - Hover Quest提示框[bQuest]**<br>\n基础的bQuest封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bQuest/bQuest.js')\n```\n```\n【组件标签】\n<bQuest title=\"查看说明\">\n       <h3>续费期说明：</h3>\n       <p>网易靓号累计服务期限最多为60个月。</p>\n   </bQuest>\n可使用组合方式。\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height:200px; padding-left:100px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bQuest title=\"查看说明\"><h3>续费期说明：</h3><p>网易靓号累计服务期限最多为60个月。</p></bQuest>';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "bQuest"
+            ],
+            "is_constructor": 1,
+            "show": true,
+            "author": "hzjiangchuanhua@corp.netease.com"
+        },
+        "SelectInput": {
+            "name": "SelectInput",
+            "shortname": "SelectInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 2,
+            "description": "**单元组件 - SelectInput[bSelectInput]**<br>\n基础的SelectInput封装组件<br>\n有多种样式<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('@netease/urs-rui/src/unit/bSelectInput/bSelectInput.js')\n```\n```\n【组件标签】\n<bSelectInput />\n\n```",
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height:200px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bSelectInput optionValues={selectData}  sType=\"0\"  />';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    data:{\n\t        selectData:[\n\t            {\"key\":\"key-1\",\"value\":\"value-1\"},\n\t            {\"key\":\"key-2\",\"value\":\"value-2\"},\n\t            {\"key\":\"key-3\",\"value\":\"value-3\"},\n\t            {\"key\":\"key-4\",\"value\":\"value-4\"}\n\t        ]\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\tdemo-1.html<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bSelectInput optionValues={selectData}  sType=\"1\"  />';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    data:{\n\t        selectData:[\n\t            {\"key\":\"key-1\",\"value\":\"value-1\"},\n\t            {\"key\":\"key-2\",\"value\":\"value-2\"},\n\t            {\"key\":\"key-3\",\"value\":\"value-3\"},\n\t            {\"key\":\"key-4\",\"value\":\"value-4\"}\n\t        ]\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bSelectInput optionValues={selectData}  sType=\"2\"  />';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    data:{\n\t        selectData:[\n\t            {\"key\":\"key-1\",\"value\":\"value-1\"},\n\t            {\"key\":\"key-2\",\"value\":\"value-2\"},\n\t            {\"key\":\"key-3\",\"value\":\"value-3\"},\n\t            {\"key\":\"key-4\",\"value\":\"value-4\"}\n\t        ]\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "样式0：下拉选择",
+                "样式1：单选",
+                "样式2：多选"
+            ],
+            "show": true,
+            "author": "张威",
+            "revise": "注释撰写 [2017-08-23] [张威]"
+        },
+        "Slide": {
+            "name": "Slide",
+            "shortname": "Slide",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bSlide/bSlide.js",
+            "line": 1,
+            "description": "**单元组件 - slide轮播图[bSlide]**<br>\n基础的bSlide封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bSlide/bSlide.js')\n```\n```\n【组件标签】\n<bSlide bannerList={bannerList}></bSlide>\n组件适配的默认样式是大图 1920居中，高为400。淡入淡出的效果。\n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height:300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bSlide bannerList={bannerList}></bSlide>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    data:{\n\t        bannerList:[{\n\t            title:'img1',\n\t            src:'https://ursdoccdn.nosdn.127.net/youhao/web_banner1.png'\n\t        },{\n\t            title:'img2',\n\t            src:'https://ursdoccdn.nosdn.127.net/youhao/webbanner2.png'\n\t        }]\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "Slide"
+            ],
+            "is_constructor": 1,
+            "show": true,
+            "author": "hzjiangchuanhua@corp.netease.com"
+        },
+        "Tab": {
+            "name": "Tab",
+            "shortname": "Tab",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bTab/bTab.js",
+            "line": 1,
+            "description": "**单元组件 - [bTab]**<br>\n基础的bTab封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/unit/bTab/bTab.js')\n```\n```\n【组件标签】\n<bTab clazz=\"u-tab\" ref=tab tabs={this.data.tabs}></bTab>\n\n{Array Object}tabs：，\nObject结构：{'name':'全部商品','key':'ALL'}\n \n```",
+            "mainName": "Unit",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\r\n\t<div id=\"app\"></div>\r\n\t<style>\r\n\t    #app .m-tab{overflow:hidden;}\r\n\t    #app .u-tab{padding:0px 20px;border-left:solid 1px #ccc;}\r\n\t    #app .bu-tab{height:40px;line-height:40px;margin-left:-1px;}\r\n\t</style>\r\n\t</html>\r\n\t\r\n\t<script>\r\n\tvar tpl =\r\n\t    '<bTab ref=bTab on-tab={this.onTab($event)} clazz=\"m-tab\" tabs={this.data.tabs} />';\r\n\tnew URSRUI.Component({\r\n\t    template: tpl,\r\n\t    data:{\r\n\t        tabs:[{key:1,name:\"<p class='u-tab'>全部商品</p>\"},{key:2,name:\"<p class='u-tab'>审核（3）</p>\"},{key:3,name:\"<p class='u-tab'>已上架（1）</p>\"}]\r\n\t    },\r\n\t    onTab:function(result){\r\n\t        this.$refs.bTab.setTab(result.tabIndex)\r\n\t    }\r\n\t}).$inject('#app');\r\n\t</script>\r\n\t\r\n\t        "
+            ],
+            "exampleTitles": [
+                "Tab"
+            ],
+            "show": true,
+            "author": "cheng-lin@corp.netease.com"
+        },
+        "Toast": {
+            "name": "Toast",
+            "shortname": "Toast",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Unit",
+            "namespace": "",
+            "file": "src/unit/bToast/bToast.js",
+            "line": 2,
+            "description": "**单元组件 - Toast[Toast]**<br>\n基础的Toast封装组件<br>\n**使用方法：**<br>\n```\n【引用关键字】\nvar toast = require('@netease/urs-rui/src/unit/bToast/bToast.js');\ntoast.show('使用方法');\n```",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bToast ref=toast />' +\n\t    '<h2>点击按钮显示Toast</h2>' +\n\t    '<div class=\"btns\">' +\n\t    '<button class=\"u-button\" on-click={this.show1()} >短文案</button>' +\n\t    '<button class=\"u-button\" on-click={this.show2()} >长文案</button>' +\n\t    '<button class=\"u-button\" on-click={this.show3()} >正确提示</button>' +\n\t    '</div>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    init:function () {\n\t    },\n\t    show1:function () {\n\t        this.$refs.toast.show(\"短文案\")\n\t    },\n\t    show2:function () {\n\t        this.$refs.toast.show(\"长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长文案\")\n\t    },\n\t    show3:function () {\n\t        this.$refs.toast.show(\"正确文案\",1)\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bToast ref=toast isH5=true />' +\n\t    '<h2>点击按钮显示Toast</h2>' +\n\t    '<div class=\"btns\">' +\n\t    '<button class=\"u-button\" on-click={this.show1()} >短文案</button>' +\n\t    '<button class=\"u-button\" on-click={this.show2()} >长文案</button>' +\n\t    '</div>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    init:function () {\n\t    },\n\t    show1:function () {\n\t        this.$refs.toast.show(\"短文案\")\n\t    },\n\t    show2:function () {\n\t        this.$refs.toast.show(\"长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长文案\")\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "展示效果",
+                "H5展示效果"
+            ],
+            "show": true,
+            "author": "张威",
+            "revise": "注释撰写 [2017-08-15] [张威]"
+        },
+        "H5MbInput": {
+            "name": "H5MbInput",
+            "shortname": "H5MbInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Module",
+            "namespace": "",
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 1,
+            "description": "**模块组件 - 移动端专用的国际手机号输入框[bH5MbInput]**<br>\n基础的按钮封装组件<br>\n支持按钮上锁、loading、倒计时功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('@netease/urs-rui/src/module/bH5MbInput/bH5MbInput.js')\n```\n```\n【组件标签】\n<bH5MbInput  i18nMb={true} />\n\n```",
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bH5MbInput ref=mb i18nMb={true}></bH5MbInput>'+\n\t    '<button class=\"u-button\" on-click={this.getValue()} >获取手机号</button>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    getValue:function () {\n\t        alert(this.$refs.mb.getValue());\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bH5MbInput ref=mb i18nMb={false}></bH5MbInput>'+\n\t    '<button class=\"u-button\" on-click={this.getValue()} >获取手机号</button>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    getValue:function () {\n\t        alert(this.$refs.mb.getValue());\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t",
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bH5MbInput ref=mb i18nMb={true}></bH5MbInput>'+\n\t    '<button class=\"u-button\" on-click={this.getValue()} >getValue()</button>'+\n\t    '<button class=\"u-button\" on-click={this.setValue()} >setValue(\"13000000163\")</button>'+\n\t    '<button class=\"u-button\" on-click={this.getFullValue()} >getFullValue()</button>'+\n\t    '<button class=\"u-button\" on-click={this.setFullValue()} >setFullValue(\"+1-|1234567|flag-US\")</button>'+\n\t    '<button class=\"u-button\" on-click={this.bindMobile()} >bindMobile(\"13000000163\")</button>'+\n\t    '<button class=\"u-button\" on-click={this.unBindMobile()} >bindMobile(\"\")</button>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    getValue:function () {\n\t        alert(this.$refs.mb.getValue());\n\t    },\n\t    setValue:function () {\n\t        this.$refs.mb.setValue('13000000163');\n\t    },\n\t    getFullValue:function () {\n\t        alert(this.$refs.mb.getFullValue());\n\t    },\n\t    setFullValue:function () {\n\t        this.$refs.mb.setFullValue('+1-|1234567|flag-US');\n\t    },\n\t    bindMobile:function () {\n\t        this.$refs.mb.bindMobile('13000000163');\n\t    },\n\t    unBindMobile:function () {\n\t        this.$refs.mb.bindMobile('');\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "国际手机号",
+                "国内手机号",
+                "组件方法"
+            ],
+            "show": true
+        },
+        "H5Tab": {
+            "name": "H5Tab",
+            "shortname": "H5Tab",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Module",
+            "namespace": "",
+            "file": "src/module/bH5Tab/bH5Tab.js",
+            "line": 1,
+            "description": "**模块组件 - 移动端专用的Tab切换[bH5Tab]**<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('@netease/urs-rui/src/module/bH5Tab/bH5Tab.js')\n```\n```\n【组件标签】\n<bH5Tab />\n\n```",
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bH5Tab ref=tab on-tabChange={this.tabChange($event)}></bH5Tab>'+\n\t    '<button class=\"u-button\" on-click={this.$refs.tab.showChannelTab($event)} >其他校验方式</button>';\n\tnew URSRUI.Component({\n\t    template: tpl,\n\t    tabChange: function (val) {\n\t        console.log(val)\n\t    }\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "展示效果"
+            ],
+            "show": true
+        },
+        "bMbInput": {
+            "name": "bMbInput",
+            "shortname": "bMbInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Module",
+            "namespace": "",
+            "file": "src/module/bMbInput/bMbInput.js",
+            "line": 1,
+            "description": "**单元组件 - 国际手机号输入框[bMbInput],继承自基础输入组件bInput**<br>\n国际手机号输入框封装组件<br>\n支持国际手机号输入框组件样式、校验国际手机号、报错提示、清空输入框等功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/module/bMbInput/bMbInput.js')\n```\n```\n【组件标签】\n<bMbInput />\n\n```",
+            "mainName": "Module",
+            "tag": "main",
+            "itemtype": "main",
+            "_main": true,
+            "is_constructor": 1,
+            "example": [
+                "\t<html>\n\t<div id=\"app\"></div>\n\t<style>\n\t    #app{\n\t        height: 200px;\n\t    }\n\t</style>\n\t</html>\n\t<script>\n\tvar tpl =\n\t    '<bMbInput></bMbInput>';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "基本用法"
+            ],
+            "show": true,
+            "author": "黄笛",
+            "revise": "注释撰写 [2017-08-28] [黄笛]"
+        },
+        "PwdInput": {
+            "name": "PwdInput",
+            "shortname": "PwdInput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Module",
+            "namespace": "",
+            "file": "src/module/bPwdInput/bPwdInput.js",
+            "line": 1,
+            "description": "**Module Component - 密码输入框[PwdInput]**<br>\n密码输入框封装组件<br>\nextends from基础输入框<br>\n支持基础输入框支持的所有传入参数、api、事件<br>\n扩展密码明密文切换功能<br>\n**使用方法：**<br>\n```\n【引用关键字】\nrequire('urs-rui/src/module/bPwdInput/bPwdInput.js')\n```\n```\n【组件标签】\n<bPwdInput />\n\n```",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<html>\n\t<div id=\"app\" style=\"height: 300px;\"></div>\n\t</html>\n\t\n\t<script>\n\tvar tpl =\n\t    '<bPwdInput ref=pwdInput  blurValidate={false} rqMsg=\"请输入密码\" placeholder=\\'密码\\' ></bPwdInput>';\n\tnew URSRUI.Component({\n\t    template: tpl\n\t}).$inject('#app');\n\t</script>\n\t\n\t"
+            ],
+            "exampleTitles": [
+                "demo"
+            ],
+            "show": true,
+            "author": "黄笛",
+            "revise": "注释撰写 [2018-01-30] [黄笛]"
+        },
+        "SmsInput[待整理]": {
+            "name": "SmsInput[待整理]",
+            "shortname": "SmsInput[待整理]",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Module",
+            "namespace": "",
+            "file": "src/module/smsinput/smsinput.js",
+            "line": 1,
+            "description": "SmsInput",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "show": true
+        },
+        "bCommon.scss": {
+            "name": "bCommon.scss",
+            "shortname": "bCommon.scss",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Sass",
+            "namespace": "",
+            "file": "src/scss/bCommon.js",
+            "line": 5,
+            "description": "**SASS common文件**<br>\n包含reset样式和组件公用样式\n**使用方法：**<br>\n```\n【引用方法】\nrequire(\"@netease/urs-rui/src/scss/bCommon.scss\");\n```",
+            "author": "张威",
+            "revise": "注释撰写 [2017-08-31] [张威]"
+        },
+        "_config.scss": {
+            "name": "_config.scss",
+            "shortname": "_config.scss",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Sass",
+            "namespace": "",
+            "file": "src/scss/config.js",
+            "line": 5,
+            "description": "**SCSS config文件**<br>\n**注意：项目使用前必须通过webpack配置config地址**<br>\n**使用方法：**<br>\n```\n【webpack配置方法】\n//须在wepack文件中配置类似地址配置，或使用此处默认值\nconst cf= path.resolve(__dirname, \"./node_modules/@netease/urs-rui/src/scss\");\nconst sassLoader =   ExtractTextPlugin.extract(\"style\", \"css!sass-loader?sourceMap=true&includePaths[]=\"+cf);\n\n//或者\nconst cf= path.resolve(__dirname, \"./node_modules/@netease/urs-rui/src/scss\");\nmodule: {\n    rules: [{\n        test: /\\.scss$/,\n        use: [{\n            loader: \"style-loader\"\n        }, {\n            loader: \"css-loader\"\n        }, {\n            loader: \"sass-loader\",\n            options: {\n                includePaths: [cf]\n            }\n        }]\n    }]\n}\n```",
+            "author": "张威",
+            "revise": "注释撰写 [2017-08-31] [张威]"
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 31,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 38,
+            "description": "初始化数据",
+            "itemtype": "property",
+            "name": "data",
+            "default": "{title:\"提示\",content:'',closeBtn:false,okBtn:true,cancelBtn:false}",
+            "type": "Object\n      tilte: 传空则不显示标题\n      content: 支持html结构",
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 47,
+            "description": "点击确认按钮回调函数",
+            "itemtype": "property",
+            "name": "ok",
+            "default": "默认关闭当前窗口",
+            "type": "function",
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 54,
+            "description": "点击取消按钮回调函数",
+            "itemtype": "property",
+            "name": "cancel",
+            "default": "默认关闭当前窗口",
+            "type": "function",
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 61,
+            "description": "点击关闭按钮回调函数",
+            "itemtype": "property",
+            "name": "close",
+            "default": "默认关闭当前窗口",
+            "type": "function",
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 90,
+            "description": "关闭对话框",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "点击确认还是取消",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bAlert/bAlert.js",
+            "line": 113,
+            "description": "显示alert弹框",
+            "itemtype": "method",
+            "name": "show",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "ok",
+                    "description": "确认成功回调",
+                    "type": "Function"
+                },
+                {
+                    "name": "cancel",
+                    "description": "取消成功回调",
+                    "type": "Function"
+                },
+                {
+                    "name": "close",
+                    "description": "关闭成功回调",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "弹窗实例对象"
+            },
+            "class": "Alert"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 29,
+            "description": "按钮可用时显示文字",
+            "itemtype": "property",
+            "name": "enableTip",
+            "default": "按钮",
+            "type": "String",
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 36,
+            "description": "倒计时状态时显示文字，``[count]``为预留计时位置",
+            "itemtype": "property",
+            "name": "countingTip",
+            "default": "[count]s",
+            "type": "String",
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 43,
+            "description": "锁定、禁用状态时显示文字",
+            "itemtype": "property",
+            "name": "disableTip",
+            "default": "状态重置",
+            "type": "String",
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 50,
+            "description": "锁定状态计时时长",
+            "itemtype": "property",
+            "name": "count",
+            "default": "30",
+            "type": "Number",
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 58,
+            "description": "锁定计时开始回调",
+            "itemtype": "event",
+            "name": "countbegin",
+            "example": [
+                " <Button on-countbegin={ function(_obj){} } />"
+            ],
+            "return": {
+                "description": "{sender: e}",
+                "type": "Object"
+            },
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 64,
+            "description": "锁定计时结束回调",
+            "itemtype": "event",
+            "name": "countend",
+            "example": [
+                " <Button on-countend={ function(_obj){} } />"
+            ],
+            "return": {
+                "description": "{sender: e}",
+                "type": "Object"
+            },
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 70,
+            "description": "点击事件",
+            "itemtype": "event",
+            "name": "click",
+            "return": {
+                "description": "{sender: e}",
+                "type": "Object"
+            },
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 108,
+            "description": "设定按钮锁定状态：loading 或 倒计时锁定",
+            "itemtype": "method",
+            "name": "setLock",
+            "params": [
+                {
+                    "name": "opt",
+                    "description": "{loading:0,count:0,tip:'XXX'}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bButton/bButton.js",
+            "line": 134,
+            "description": "还原按钮状态：按钮可用，文案恢复为enableTip，\nloading、倒计时清除",
+            "itemtype": "method",
+            "name": "unLock",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Button"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 27,
+            "description": "验证码外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "2",
+            "type": "String",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 34,
+            "description": "验证码类型",
+            "itemtype": "property",
+            "name": "captchaType",
+            "default": "2",
+            "type": "String",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 41,
+            "description": "验证码文案是否居中",
+            "itemtype": "property",
+            "name": "alignToSpace",
+            "default": "true",
+            "type": "Boolean",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 48,
+            "description": "验证码静态资源请求地址",
+            "itemtype": "property",
+            "name": "staticServer",
+            "default": "captcha.reg.163.com/v2",
+            "type": "String",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 55,
+            "description": "验证码后端验证请求地址",
+            "itemtype": "property",
+            "name": "apiServer",
+            "default": "captcha.reg.163.com/v2",
+            "type": "String",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 62,
+            "description": "验证码Id",
+            "itemtype": "property",
+            "name": "captchaId",
+            "default": "01af5fbb3c62da409236694547396158",
+            "type": "String",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 69,
+            "description": "验证码宽度",
+            "itemtype": "property",
+            "name": "width",
+            "default": "document.body.clientWidth * 0.9",
+            "type": "Number",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 76,
+            "description": "是否使用https",
+            "itemtype": "property",
+            "name": "forceHttps",
+            "default": "false",
+            "type": "Boolean",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 83,
+            "description": "显示延迟时间",
+            "itemtype": "property",
+            "name": "showDelay",
+            "default": "300",
+            "type": "Number",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 90,
+            "description": "隐藏延迟时间",
+            "itemtype": "property",
+            "name": "hideDelay",
+            "default": "0",
+            "type": "Number",
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 98,
+            "description": "验证码验证结果",
+            "itemtype": "event",
+            "name": "validate",
+            "example": [
+                " <bCaptcha on-validate={ function(_obj){} } />"
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 104,
+            "description": "验证码初始化成功",
+            "itemtype": "event",
+            "name": "initCallback",
+            "example": [
+                " <bCaptcha on-initCallback={ function(_obj){} } />"
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 110,
+            "description": "验证码初始化失败",
+            "itemtype": "event",
+            "name": "initErrorHandler",
+            "example": [
+                " <bCaptcha on-initErrorHandler={ function(_obj){} } />"
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 153,
+            "description": "获取验证码对错",
+            "itemtype": "method",
+            "name": "validate",
+            "return": {
+                "description": "Boolean"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 198,
+            "description": "重置验证码",
+            "itemtype": "method",
+            "name": "reset",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "验证码类型 ** *2滑块* | 3点击式**",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bCaptcha/bCaptcha.js",
+            "line": 215,
+            "description": "显示错误提示",
+            "itemtype": "method",
+            "name": "showError",
+            "params": [
+                {
+                    "name": "txt",
+                    "description": "错误提示 ** *错误提示**",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Captcha"
+        },
+        {
+            "file": "src/unit/bGotop/bGotop.js",
+            "line": 24,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Gotop"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 25,
+            "description": "组件自定义追加类名，将追加到组件最外层html结构class属性中",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 32,
+            "description": "输入框input标签value属性值，双向绑定",
+            "itemtype": "property",
+            "name": "value",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 39,
+            "description": "输入框input标签type属性值",
+            "itemtype": "property",
+            "name": "type",
+            "default": "'text'",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 46,
+            "description": "输入框input标签name属性值",
+            "itemtype": "property",
+            "name": "name",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 53,
+            "description": "输入框input标签是否禁用状态",
+            "itemtype": "property",
+            "name": "disabled",
+            "default": "0",
+            "type": "Boolean",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 60,
+            "description": "输入框input标签placeholder属性值",
+            "itemtype": "property",
+            "name": "placeholder",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 67,
+            "description": "基础输入框组件状态，可选‘error’(校验不通过)",
+            "itemtype": "property",
+            "name": "state",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 74,
+            "description": "是否允许显示清空输入框按钮",
+            "itemtype": "property",
+            "name": "enableDelete",
+            "default": "true",
+            "type": "Boolean",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 81,
+            "description": "清空输入框按钮样式类名",
+            "itemtype": "property",
+            "name": "del_icon_clazz",
+            "default": "'i-icon i-icon-delete'",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 88,
+            "description": "清空输入框后是否自动聚焦",
+            "itemtype": "property",
+            "name": "deleteAutoFocus",
+            "default": "0",
+            "type": "Boolean",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 95,
+            "description": "输入框组件错误提示文案，显示在组件下方",
+            "itemtype": "property",
+            "name": "errMsg",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 102,
+            "description": "是否必填",
+            "itemtype": "property",
+            "name": "require",
+            "default": "true",
+            "type": "Boolean",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 109,
+            "description": "是否失焦校验输入框",
+            "itemtype": "property",
+            "name": "blurValidate",
+            "default": "true",
+            "type": "Boolean",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 116,
+            "description": "是否允许显示错误提示",
+            "itemtype": "property",
+            "name": "showErr",
+            "default": "''",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 123,
+            "description": "必填输入框为空校验时提示的文案",
+            "itemtype": "property",
+            "name": "rqMsg",
+            "default": "'请输入内容'",
+            "type": "String",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 130,
+            "description": "输入框校验规则数组",
+            "itemtype": "property",
+            "name": "rules",
+            "default": "[]",
+            "type": "Array",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 137,
+            "description": "输入框最大允许输入长度",
+            "itemtype": "property",
+            "name": "maxlength",
+            "default": "50",
+            "type": "Number",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 144,
+            "description": "输入框最小输入长度",
+            "itemtype": "property",
+            "name": "minlength",
+            "default": "50",
+            "type": "Number",
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 152,
+            "description": "输入框聚焦",
+            "itemtype": "event",
+            "name": "focus",
+            "return": {
+                "description": "event",
+                "type": "Object"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 158,
+            "description": "输入框失焦",
+            "itemtype": "event",
+            "name": "blur",
+            "return": {
+                "description": "event",
+                "type": "Object"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 164,
+            "description": "输入框正在输入",
+            "itemtype": "event",
+            "name": "input",
+            "return": {
+                "description": "event",
+                "type": "Object"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 214,
+            "description": "校验输入框",
+            "itemtype": "method",
+            "name": "validate",
+            "return": {
+                "description": "Object"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 264,
+            "description": "主动聚焦输入框",
+            "itemtype": "method",
+            "name": "focus",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 272,
+            "description": "主动失焦输入框",
+            "itemtype": "method",
+            "name": "blur",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 280,
+            "description": "获取输入框值value",
+            "itemtype": "method",
+            "name": "getValue",
+            "return": {
+                "description": "String"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 288,
+            "description": "设置输入框值value",
+            "itemtype": "method",
+            "name": "setValue",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 296,
+            "description": "设置输入框状态",
+            "itemtype": "method",
+            "name": "setState",
+            "params": [
+                {
+                    "name": "_state",
+                    "description": "状态 ** *error* | '' **",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 305,
+            "description": "获取输入框状态",
+            "itemtype": "method",
+            "name": "getState",
+            "return": {
+                "description": "String"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 313,
+            "description": "显示输入框错误提示、设置错误状态",
+            "itemtype": "method",
+            "name": "showError",
+            "params": [
+                {
+                    "name": "_errMsg",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bInput/bInput.js",
+            "line": 324,
+            "description": "清除输入框错误提示、清空错误状态",
+            "itemtype": "method",
+            "name": "clearError",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "bInput"
+        },
+        {
+            "file": "src/unit/bListView/bListView.js",
+            "line": 31,
+            "itemtype": "property",
+            "name": "sender 事件发送对象",
+            "type": "Object",
+            "class": "Loading",
+            "subprops": [
+                {
+                    "name": "selected",
+                    "description": "改变后的选择项",
+                    "type": "Item"
+                },
+                {
+                    "name": "value",
+                    "description": "改变后的选择值",
+                    "type": "Var"
+                }
+            ]
+        },
+        {
+            "file": "src/unit/bListView/bListView.js",
+            "line": 62,
+            "itemtype": "property",
+            "name": "sender 事件发送对象",
+            "type": "Object",
+            "class": "Loading",
+            "subprops": [
+                {
+                    "name": "selected",
+                    "description": "当前选择项",
+                    "type": "Item"
+                },
+                {
+                    "name": "value",
+                    "description": "当前选择值",
+                    "type": "Var"
+                }
+            ]
+        },
+        {
+            "file": "src/unit/bLoading/bLoading.js",
+            "line": 28,
+            "description": "Loading的样式",
+            "itemtype": "property",
+            "name": "type",
+            "default": "1",
+            "type": "String",
+            "class": "Loading",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bLoading/bLoading.js",
+            "line": 34,
+            "description": "Loading初始状态",
+            "itemtype": "property",
+            "name": "loading",
+            "default": "true",
+            "type": "Boolean",
+            "class": "Loading",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bLoading/bLoading.js",
+            "line": 57,
+            "description": "显示loading",
+            "itemtype": "method",
+            "name": "show",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Loading",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bLoading/bLoading.js",
+            "line": 66,
+            "description": "结束loading",
+            "itemtype": "method",
+            "name": "end",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Loading",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 25,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 32,
+            "description": "title Menu 头部的标题 | title也支持组件组合的方式传入一段html结构",
+            "itemtype": "property",
+            "name": "title",
+            "default": "''",
+            "type": "String",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 40,
+            "description": "open Menu初始是否显示下拉的菜单",
+            "itemtype": "property",
+            "name": "open",
+            "default": "false",
+            "type": "Boolean",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 48,
+            "description": "source Menu下拉的菜单源数据",
+            "itemtype": "property",
+            "name": "source",
+            "default": "[]",
+            "type": "Array Object\n        Object结构：\n            name: 显示的标题\n            .... 其他属性可自定义，click下拉item时会抛出该item",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 59,
+            "description": "点击Menu title标题",
+            "itemtype": "event",
+            "name": "click",
+            "example": [
+                " <bMenu on-click={function($event){console.log($event.event)} } />"
+            ],
+            "return": {
+                "description": "$event"
+            },
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 66,
+            "description": "点击Menu item下拉菜单",
+            "itemtype": "event",
+            "name": "select",
+            "example": [
+                " <bMenu on-select={function(e){console.log(e.name)} } />"
+            ],
+            "return": {
+                "description": "source 数组里的item"
+            },
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 95,
+            "description": "点击menu title事件",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bMenu/bMenu.js",
+            "line": 101,
+            "description": "点击menu下拉菜单事件",
+            "class": "Menu",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 24,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 31,
+            "description": "总条数",
+            "itemtype": "property",
+            "name": "total",
+            "default": "0",
+            "type": "Number",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 38,
+            "description": "每页显示条数",
+            "itemtype": "property",
+            "name": "limit",
+            "default": "10",
+            "type": "Number",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 45,
+            "description": "分隔符文案",
+            "itemtype": "property",
+            "name": "ellipsis",
+            "default": "...",
+            "type": "String",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 52,
+            "description": "当前显示第几页",
+            "itemtype": "property",
+            "name": "currentPage",
+            "default": "1",
+            "type": "Number",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 59,
+            "description": "三段式分页每段的数量",
+            "itemtype": "property",
+            "name": "step",
+            "default": "[1,3,1]",
+            "type": "Array",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 66,
+            "description": "上一页文案",
+            "itemtype": "property",
+            "name": "prePage",
+            "default": "上一页",
+            "type": "String",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 73,
+            "description": "下一页文案",
+            "itemtype": "property",
+            "name": "nextPage",
+            "default": "下一页",
+            "type": "String",
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 81,
+            "description": "选择页码",
+            "itemtype": "event",
+            "name": "page",
+            "example": [
+                " <bPager on-page={ function(_obj){console.log(_obj.currentPage)} } />"
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 202,
+            "description": "刷新翻页器",
+            "itemtype": "method",
+            "name": "updatePage",
+            "params": [
+                {
+                    "name": "UNKNOWN",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bPager/bPager.js",
+            "line": 224,
+            "description": "设置当前页码",
+            "itemtype": "method",
+            "name": "setPage",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "页码 ** *1* |2 | 3 **",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Pager",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bQuest/bQuest.js",
+            "line": 28,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Quest",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bQuest/bQuest.js",
+            "line": 35,
+            "description": "hover的标题",
+            "itemtype": "property",
+            "name": "title or tilteTpl",
+            "default": "''",
+            "type": "String\n      title默认是<p>{String}</p>\n      tilteTpl：可传入html结构",
+            "class": "Quest",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelect/bSelect.js",
+            "line": 1,
+            "description": "**单元组件 - 基础下拉选框[bSelect]**",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 28,
+            "description": "输入框name标签",
+            "itemtype": "property",
+            "name": "name",
+            "default": "bSelectInput",
+            "type": "String",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 34,
+            "description": "下拉选择框时初始展示选中的value",
+            "itemtype": "property",
+            "name": "initValue",
+            "default": "空",
+            "type": "String",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 40,
+            "description": "选项",
+            "itemtype": "property",
+            "name": "optionValues",
+            "default": "空",
+            "type": "String",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 46,
+            "description": "类型，0：单选-基础，1：单选-并排，2：多选",
+            "itemtype": "property",
+            "name": "sType",
+            "default": "1",
+            "type": "String",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 52,
+            "description": "初始化值为空时，getValue()方法自动选择首项",
+            "itemtype": "property",
+            "name": "defaultSelect",
+            "default": "1",
+            "type": "String",
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 88,
+            "description": "设置选中值",
+            "itemtype": "method",
+            "name": "setValue",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "填写值",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSelectInput/bSelectInput.js",
+            "line": 98,
+            "description": "获取value",
+            "itemtype": "method",
+            "name": "getValue",
+            "return": {
+                "description": "String"
+            },
+            "class": "SelectInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSlide/bSlide.js",
+            "line": 25,
+            "description": "外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Slide",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSlide/bSlide.js",
+            "line": 32,
+            "description": "图片源数据",
+            "itemtype": "property",
+            "name": "bannerList",
+            "default": "空数组 []",
+            "type": "Array Object \n      Object结构：\n         href: 图片点击跳转地址\n         src : 图片源地址\n         title: 图片alt描述",
+            "class": "Slide",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bSlide/bSlide.js",
+            "line": 43,
+            "description": "轮播切换时长",
+            "itemtype": "property",
+            "name": "duration",
+            "default": "多长时间切换一次，默认是4s。精确到毫秒",
+            "type": "Number",
+            "class": "Slide",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bTab/bTab.js",
+            "line": 27,
+            "description": "tab外层样式",
+            "itemtype": "property",
+            "name": "clazz",
+            "default": "",
+            "type": "String",
+            "class": "Tab",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bTab/bTab.js",
+            "line": 34,
+            "description": "tab列表",
+            "itemtype": "property",
+            "name": "tabs",
+            "default": "",
+            "type": "Array",
+            "class": "Tab",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bTab/bTab.js",
+            "line": 42,
+            "description": "tab切换结果",
+            "itemtype": "event",
+            "name": "tab",
+            "example": [
+                " <bTab on-tab={ function(_obj){console.log(_obj.tabIndex)} } />"
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Tab",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bTab/bTab.js",
+            "line": 67,
+            "description": "选择tab,高亮",
+            "itemtype": "method",
+            "name": "setTab",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "选择tab ** *ALL* |ALL1 | ALL2 **",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Tab",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bToast/bToast.js",
+            "line": 23,
+            "description": "Toast的默认样式",
+            "itemtype": "property",
+            "name": "toastType",
+            "default": "0",
+            "type": "Number",
+            "class": "Toast",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bToast/bToast.js",
+            "line": 29,
+            "description": "Toast是否为H5样式",
+            "itemtype": "property",
+            "name": "isH5",
+            "default": "false",
+            "type": "Boolean",
+            "class": "Toast",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bToast/bToast.js",
+            "line": 59,
+            "description": "显示Toast",
+            "itemtype": "method",
+            "name": "show",
+            "params": [
+                {
+                    "name": "_toastCnt",
+                    "description": "toast内容",
+                    "type": "String"
+                },
+                {
+                    "name": "_type",
+                    "description": "toast类型 0：warn；1：success",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Toast",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/bToast/bToast.js",
+            "line": 82,
+            "description": "隐藏Toast",
+            "itemtype": "method",
+            "name": "hide",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "Toast",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/base.js",
+            "line": 16,
+            "access": "protected",
+            "tagname": "",
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/base.js",
+            "line": 26,
+            "access": "protected",
+            "tagname": "",
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/base.js",
+            "line": 33,
+            "description": "设置this.data的默认值，不会覆盖已经存在的key",
+            "params": [
+                {
+                    "name": "_args",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/errorHandler.js",
+            "line": 8,
+            "description": "实例化一个alert弹窗",
+            "params": [
+                {
+                    "name": "opt",
+                    "description": "弹窗参数",
+                    "type": "Object"
+                },
+                {
+                    "name": "ok",
+                    "description": "确认按钮点击回调函数",
+                    "type": "Function"
+                },
+                {
+                    "name": "UNKNOWN",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/errorHandler.js",
+            "line": 19,
+            "description": "错误提示",
+            "access": "protected",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "mapper",
+                    "description": "",
+                    "type": "Any"
+                },
+                {
+                    "name": "res",
+                    "description": "",
+                    "type": "Any"
+                }
+            ],
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/filter.js",
+            "line": 5,
+            "itemtype": "method",
+            "name": "dateFormat(date, format) 日期格式化",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "date",
+                    "description": "需要格式化的值",
+                    "type": "Date|number"
+                },
+                {
+                    "name": "format",
+                    "description": "格式。默认为`yyyy.MM.dd`。",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "返回生成的字符串",
+                "type": "Directive"
+            },
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/filter.js",
+            "line": 56,
+            "description": "限时时间格式化",
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/unit/base/filter.js",
+            "line": 100,
+            "description": "nos图片url格式化",
+            "class": "H5MbInput",
+            "module": "Unit"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 25,
+            "description": "输入框提示语",
+            "itemtype": "property",
+            "name": "placeholder",
+            "default": "请输入手机号",
+            "type": "String",
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 31,
+            "description": "输入最大长度",
+            "itemtype": "property",
+            "name": "maxLength",
+            "default": "20",
+            "type": "Number",
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 37,
+            "description": "是否支持国际手机号",
+            "itemtype": "property",
+            "name": "i18nMb",
+            "default": "false",
+            "type": "boolean",
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 70,
+            "description": "获取手机号码，国际手机号模式下返回格式【1-1234567】，在国内手机号模式下返回格式【13000000163】",
+            "itemtype": "method",
+            "name": "getValue",
+            "return": {
+                "description": "String"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 85,
+            "description": "设置普通国内手机号码",
+            "itemtype": "method",
+            "name": "setValue",
+            "params": [
+                {
+                    "name": "_val",
+                    "description": "格式【1300000163】",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Undefined"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 101,
+            "description": "设置全手机号码",
+            "itemtype": "method",
+            "name": "setFullValue",
+            "params": [
+                {
+                    "name": "_data",
+                    "description": "格式【+86-|1300000163|flag-CN】",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Undefined"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 114,
+            "description": "获取手机号码全信息，包括code、number和class",
+            "itemtype": "method",
+            "name": "getFullValue",
+            "return": {
+                "description": "String"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 156,
+            "description": "国内手机号锁定操作",
+            "itemtype": "method",
+            "name": "bindMobile",
+            "params": [
+                {
+                    "name": "_value",
+                    "description": "格式【1300000163】，当值为空时，为解锁操作",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Undefined"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5MbInput/bH5MbInput.js",
+            "line": 176,
+            "description": "校验输入框",
+            "itemtype": "method",
+            "name": "focus",
+            "return": {
+                "description": "undefined"
+            },
+            "class": "H5MbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5Tab/bH5Tab.js",
+            "line": 21,
+            "description": "输入框提示语",
+            "itemtype": "property",
+            "name": "placeholder",
+            "default": "请输入手机号",
+            "type": "String",
+            "class": "H5Tab",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5Tab/bH5Tab.js",
+            "line": 59,
+            "description": "切换channel",
+            "class": "H5Tab",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bH5Tab/bH5Tab.js",
+            "line": 67,
+            "description": "显示channel Tab",
+            "class": "H5Tab",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bMbInput/bMbInput.js",
+            "line": 36,
+            "description": "当前选中的国家名称和区号",
+            "itemtype": "property",
+            "name": "selected",
+            "default": "{nm:'CN',value:'86'}",
+            "type": "Object",
+            "class": "bMbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bMbInput/bMbInput.js",
+            "line": 43,
+            "description": "组合后的手机号，格式为：区号+输入框输入的手机号，，如86+15066666666，data.value变化和selected变化时都会更新该值",
+            "itemtype": "property",
+            "name": "mbValue",
+            "default": "''",
+            "type": "String",
+            "class": "bMbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bMbInput/bMbInput.js",
+            "line": 50,
+            "description": "当前选中的国家名称和区号",
+            "itemtype": "property",
+            "name": "selected",
+            "default": "{nm:'CN',value:'86'}",
+            "type": "Object",
+            "class": "bMbInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bPwdInput/bPwdInput.js",
+            "line": 29,
+            "description": "是否支持密码输入框内容显示隐藏切换",
+            "itemtype": "property",
+            "name": "enableEye",
+            "default": "true",
+            "type": "String",
+            "class": "PwdInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bPwdInput/bPwdInput.js",
+            "line": 36,
+            "description": "密码输入框显示密码明文时图标（眼睛打开）",
+            "itemtype": "property",
+            "name": "eye_open_icon_clazz",
+            "default": "'iconfont icon-eye-open bInput_delete'",
+            "type": "String",
+            "class": "PwdInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/module/bPwdInput/bPwdInput.js",
+            "line": 43,
+            "description": "密码输入框隐藏密码明文时图标（眼睛关闭）",
+            "itemtype": "property",
+            "name": "eye_close_icon_clazz",
+            "default": "'iconfont icon-eye-close bInput_delete'",
+            "type": "String",
+            "class": "PwdInput",
+            "module": "Module"
+        },
+        {
+            "file": "src/scss/bCommon.js",
+            "line": 1,
+            "description": "Created by zwwill on 2017/8/31.",
+            "class": "bCommon.scss",
+            "module": "Module"
+        },
+        {
+            "file": "src/scss/config.js",
+            "line": 1,
+            "description": "Created by zwwill on 2017/8/31.",
+            "class": "_config.scss",
+            "module": "Sass"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bAlert/bAlert.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bAlert/bAlert.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bButton/bButton.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bCaptcha/bCaptcha.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bCaptcha/bCaptcha.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bCaptcha/bCaptcha.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bCaptcha/bCaptcha.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bGotop/bGotop.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bGotop/bGotop.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bInput/bInput.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bInput/bInput.js:1"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bInput/bInput.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bLoading/bLoading.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bLoading/bLoading.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bLoading/bLoading.js:2"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bLoading/bLoading.js:2"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bLoading/bLoading.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bMenu/bMenu.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bMenu/bMenu.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bPager/bPager.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bPager/bPager.js:1"
+        },
+        {
+            "message": "param name missing: {Object}",
+            "line": " src/unit/bPager/bPager.js:202"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bQuest/bQuest.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bQuest/bQuest.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bSelectInput/bSelectInput.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bSelectInput/bSelectInput.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bSelectInput/bSelectInput.js:2"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bSelectInput/bSelectInput.js:2"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bSelectInput/bSelectInput.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bSlide/bSlide.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bSlide/bSlide.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bTab/bTab.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bTab/bTab.js:1"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " src/unit/bToast/bToast.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bToast/bToast.js:2"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/unit/bToast/bToast.js:2"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/unit/bToast/bToast.js:2"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/unit/bToast/bToast.js:2"
+        },
+        {
+            "message": "param name missing: {function}",
+            "line": " src/unit/base/errorHandler.js:8"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bH5MbInput/bH5MbInput.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bH5MbInput/bH5MbInput.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bH5MbInput/bH5MbInput.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/module/bH5MbInput/bH5MbInput.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bH5Tab/bH5Tab.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/module/bH5Tab/bH5Tab.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bMbInput/bMbInput.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/module/bMbInput/bMbInput.js:1"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/module/bMbInput/bMbInput.js:1"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " src/module/bPwdInput/bPwdInput.js:1"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " src/module/bPwdInput/bPwdInput.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/module/bPwdInput/bPwdInput.js:1"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/module/bPwdInput/bPwdInput.js:1"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " src/module/smsinput/smsinput.js:1"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " src/module/smsinput/smsinput.js:1"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/scss/bCommon.js:5"
+        },
+        {
+            "message": "unknown tag: revise",
+            "line": " src/scss/config.js:5"
+        },
+        {
+            "message": "Missing item type\n关闭对话框",
+            "line": " src/unit/bAlert/bAlert.js:90"
+        },
+        {
+            "message": "Missing item type\n点击menu title事件",
+            "line": " src/unit/bMenu/bMenu.js:95"
+        },
+        {
+            "message": "Missing item type\n点击menu下拉菜单事件",
+            "line": " src/unit/bMenu/bMenu.js:101"
+        },
+        {
+            "message": "Missing item type\n**单元组件 - 基础下拉选框[bSelect]**",
+            "line": " src/unit/bSelect/bSelect.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/unit/base/base.js:16"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/unit/base/base.js:26"
+        },
+        {
+            "message": "Missing item type\n设置this.data的默认值，不会覆盖已经存在的key",
+            "line": " src/unit/base/base.js:33"
+        },
+        {
+            "message": "Missing item type\n实例化一个alert弹窗",
+            "line": " src/unit/base/errorHandler.js:8"
+        },
+        {
+            "message": "Missing item type\n错误提示",
+            "line": " src/unit/base/errorHandler.js:19"
+        },
+        {
+            "message": "Missing item type\n限时时间格式化",
+            "line": " src/unit/base/filter.js:56"
+        },
+        {
+            "message": "Missing item type\nnos图片url格式化",
+            "line": " src/unit/base/filter.js:100"
+        },
+        {
+            "message": "Missing item type\n切换channel",
+            "line": " src/module/bH5Tab/bH5Tab.js:59"
+        },
+        {
+            "message": "Missing item type\n显示channel Tab",
+            "line": " src/module/bH5Tab/bH5Tab.js:67"
+        },
+        {
+            "message": "Missing item type\nCreated by zwwill on 2017/8/31.",
+            "line": " src/scss/bCommon.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated by zwwill on 2017/8/31.",
+            "line": " src/scss/config.js:1"
+        }
+    ]
+}

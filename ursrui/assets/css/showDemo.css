@@ -1,0 +1,25 @@
+
+#__show {
+	margin : 5px 10px;
+}
+#__show .u-button{padding: 5px 10px;  margin:0 5px 5px 0; background-color: #ddd;}
+#__show .u-button:hover{background: #ccc; cursor: pointer;}
+#__show .btns{margin: 100px 0 20px;}
+#__logs {
+	margin : 5px 10px;
+	font-size : 10px;
+}
+#__logs li {
+	margin : 5px;
+	padding : 5px;
+}
+#__logs p {
+	margin : 0;
+}
+#__logs li.success {
+	background-color: #a6e22e;
+}
+#__logs li.fail {
+	background-color: #f92672;
+}
+

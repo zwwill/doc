@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SmartJS - Demo</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/addon/dialog/dialog.css">
+    <link rel="stylesheet" href="codemirror/addon/fold/foldgutter.css">
+    <link rel="stylesheet" href="codemirror/addon/dialog/dialog.css">
+    <link rel="stylesheet" href="codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="codemirror/addon/lint/lint.css">
+    <link rel="stylesheet" href="codemirror/addon/hint/show-hint.css">
+
+    <link rel="stylesheet" href="css/codeDemo.css">
+    <LINK href="favicon.png" type="image/x-icon" rel=icon> 
+
+    <script src="codemirror/lib/codemirror.js"></script>
+
+    <script src="codemirror/addon/lint/jshint.js"></script>
+    <script src="codemirror/addon/lint/lint.js"></script>
+    <script src="codemirror/addon/lint/javascript-lint.js"></script>
+    <script src="codemirror/addon/hint/javascript-hint.js"></script>
+
+    <script src="codemirror/addon/search/searchcursor.js"></script>
+    <script src="codemirror/addon/search/search.js"></script>
+    <script src="codemirror/addon/dialog/dialog.js"></script>
+    <script src="codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="codemirror/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/addon/comment/comment.js"></script>
+    <script src="codemirror/addon/wrap/hardwrap.js"></script>
+    <script src="codemirror/addon/fold/foldcode.js"></script>
+    <script src="codemirror/addon/fold/brace-fold.js"></script>
+
+    <script src="codemirror/keymap/sublime.js"></script>
+
+    <script src="codemirror/addon/hint/show-hint.js"></script>
+    <script src="codemirror/addon/hint/xml-hint.js"></script>
+    <script src="codemirror/addon/hint/html-hint.js"></script>
+
+    <script src="codemirror/mode/javascript.js"></script>
+    <script src="codemirror/mode/xml.js"></script>
+    <script src="codemirror/mode/css.js"></script>
+    <script src="codemirror/mode/htmlmixed.js"></script>
+
+    <script src="vendor/jquery/jquery-1.8.2.min.js"></script>
+
+    
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    SmartDoc Demo
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <div class="code-toolbar">
+                    <button id='btnRun' class="btn btn-success">Run</button>
+                    <button id='btnReset' class="btn btn-success">Reset</button>
+                    <button id='btnOpen' class="btn btn-success">View In New Window</button>
+               </div> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class='htmlInput'>
+                    <textarea id="txtHtml"></textarea>
+                </div>
+                <div class='jsInput'>
+                    <textarea id="txtCode"></textarea>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="alert alert-info" role="alert">
+                    <ul>
+                        <li>URS Regular UI组件的实例说明</li>
+                        <li>使用前须引入regular.js文件，此处已经自动引入urs-rui打包文件，可任意带动试用效果</li>
+                        <li>实际项目中请使用require引入所需组件，避免空间占用</li>
+                    </ul>
+                </div>
+                </ul>
+                <h2>Result</h2>
+                <iframe id="render">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/code.js"></script><script src="./vendor/jquery/jquery-1.8.2.min.js"></script><script src="//ursdoccdn.nosdn.127.net/cap/ec2.2.8.js"></script><script src="res/regular.min.js"></script><script src="res/urs-regular-ui.js"></script>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>src/unit/base/errorHandler.js - URS RUI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="/urs-rui/doc/">
+             
+            <img alt="URS RUI" src="../assets/img/logo.png" title="URS RUI">
+            
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="/urs-rui/doc/ui-standard/index.html">URS UI规范</a>
+                    </li>
+                    
+                    <li><a href="https://g.hz.netease.com/urs-front/urs-rui">GitLab</a>
+                    </li>
+                    
+                    <li><a href="http://npm.hz.netease.com/package/@netease/urs-rui">NPM</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>元件 / 模块</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to Filter Components">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Module</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/H5MbInput.html">H5MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/H5Tab.html">H5Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bMbInput.html">bMbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PwdInput.html">PwdInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SmsInput[待整理].html">SmsInput[待整理]</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Sass</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/bCommon.scss.html">bCommon.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/_config.scss.html">_config.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Unit</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Alert.html">Alert</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Button.html">Button</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Captcha.html">Captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Gotop.html">Gotop</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bInput.html">bInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Menu.html">Menu</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Pager.html">Pager</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Quest.html">Quest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SelectInput.html">SelectInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Slide.html">Slide</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Tab.html">Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Toast.html">Toast</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>src/unit/base/errorHandler.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+import Alert from &#x27;components/bAlert/bAlert&#x27;
+import Notify from &#x27;components/bNotify/bNotify&#x27;
+
+import Util from &#x27;js/util&#x27;
+
+const errorHandler = function(Component) {
+    Component.implement({
+        /**
+         * 实例化一个alert弹窗
+         * 
+         * @param {object} opt 弹窗参数
+         * @param {function} ok 确认按钮点击回调函数
+         * @param {function}
+         */
+        showAlert(opt, cb=[]) {
+            this.alert = Alert.show(opt, ...cb);              
+            return this.alert;
+        },
+        /**
+         * 错误提示
+         * @protected
+         * @param {any} mapper 
+         * @param {any} res 
+         */
+        errorHandler (m) {
+           
+            switch (m.pos) {
+                // notify提示
+                case &#x27;notify&#x27;:
+                    Notify.show(m.msg);
+                    break;
+                // alert提示
+                case &#x27;alert&#x27;:
+                    this.showAlert(m.opt, m.cb);
+                    break;
+                // error页面跳转，m.opt表示参数对象
+                // @NOTE m.opt将转成参数键值对拼接到链接后面
+                case &#x27;page&#x27;:
+                    let href = location.protocol +&quot;//&quot;+ location.host + &#x27;/error.html&#x27;;
+                
+                    if(m.opt){
+                        href += &#x27;?&#x27; + Util.object2query(m.opt);
+                    }
+
+                    location.href = href;
+                    break;
+                    // 元素自身报错
+                default:    
+                    m.pos.showError&amp;&amp;m.pos.showError(m.msg);  
+
+                    break;
+            }
+
+        },
+        resMapper (res) {
+            let errors = res.result.errors;
+            // 报错处理
+            if(errors){
+                for (let i = 0; i &lt; errors.length; i++) {
+                    let ele = errors[i];
+                    this.$refs[ele.name]&amp;&amp;this.$refs[ele.name].showError(ele.message)
+                }
+            }else{
+                switch(res.retCode){
+                    case &#x27;10500&#x27;:
+                    case &#x27;10400&#x27;:
+                    case &#x27;-1&#x27;:
+                        this.errorHandler({pos:&#x27;notify&#x27;,msg:res.retDesc});
+                        break;
+                    case &#x27;11405&#x27;:
+                        // 引导回卖家流程第一步
+                        var okfunc = ()=&gt;{
+                            location.href=&quot;haoma.163.com&quot;
+                        }
+                    case &#x27;10401&#x27;:
+                        // 引导跳转回首页
+                        if(!okfunc){
+                            var okfunc = ()=&gt;{
+                                location.href=&quot;www.baidu.com&quot;;
+                            }
+                        }
+                        let content = &#x27;&lt;div class=&quot;addGoods-alert-1&quot;&gt;&#x27; + res.retDesc + &#x27;&lt;/div&gt;&#x27;
+                        this.errorHandler({pos:&#x27;alert&#x27;,opt:{content:content,okBtn:&#x27;确定&#x27;},cb:[okfunc]});
+                        break;
+                    case &#x27;10403&#x27; :
+                        break;
+                    default:
+                        this.errorHandler({pos:&#x27;notify&#x27;,msg:&#x27;未知错误&#x27;+res.retCode});
+                        break;
+                }
+            }
+        }
+    })
+}
+
+export default errorHandler;
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

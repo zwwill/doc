@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>src/unit/bSelectInput/bSelectInput.js - URS RUI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="/urs-rui/doc/">
+             
+            <img alt="URS RUI" src="../assets/img/logo.png" title="URS RUI">
+            
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="/urs-rui/doc/ui-standard/index.html">URS UI规范</a>
+                    </li>
+                    
+                    <li><a href="https://g.hz.netease.com/urs-front/urs-rui">GitLab</a>
+                    </li>
+                    
+                    <li><a href="http://npm.hz.netease.com/package/@netease/urs-rui">NPM</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>元件 / 模块</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to Filter Components">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Module</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/H5MbInput.html">H5MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/H5Tab.html">H5Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bMbInput.html">bMbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PwdInput.html">PwdInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SmsInput[待整理].html">SmsInput[待整理]</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Sass</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/bCommon.scss.html">bCommon.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/_config.scss.html">_config.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Unit</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Alert.html">Alert</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Button.html">Button</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Captcha.html">Captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Gotop.html">Gotop</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bInput.html">bInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Menu.html">Menu</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Pager.html">Pager</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Quest.html">Quest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SelectInput.html">SelectInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Slide.html">Slide</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Tab.html">Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Toast.html">Toast</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>src/unit/bSelectInput/bSelectInput.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+
+/**
+ * **单元组件 - SelectInput[bSelectInput]**&lt;br&gt;
+ * 基础的SelectInput封装组件&lt;br&gt;
+ * 有多种样式&lt;br&gt;
+ * **使用方法：**&lt;br&gt;
+ * &#x60;&#x60;&#x60;
+ * 【引用关键字】
+ * require(&#x27;@netease/urs-rui/src/unit/bSelectInput/bSelectInput.js&#x27;)
+ * &#x60;&#x60;&#x60;
+ * &#x60;&#x60;&#x60;
+ * 【组件标签】
+ * &lt;bSelectInput /&gt;
+ *
+ * &#x60;&#x60;&#x60;
+ * @class SelectInput
+ * @module Unit
+ * @constructor
+ * @demo unit/bSelectInput/demo-1.html {样式0：下拉选择}
+ * @demo unit/bSelectInput/demo-2.html {样式1：单选}
+ * @demo unit/bSelectInput/demo-3.html {样式2：多选}
+ * @show true
+ * @author 张威
+ * @revise 注释撰写 [2017-08-23] [张威]
+ */
+
+/*================组件可传参数==================*/
+/**
+ * 输入框name标签
+ * @property name
+ * @default bSelectInput
+ * @type String
+ */
+/**
+ * 下拉选择框时初始展示选中的value
+ * @property initValue
+ * @default 空
+ * @type String
+ */
+/**
+ * 选项
+ * @property optionValues
+ * @default 空
+ * @type String
+ */
+/**
+ * 类型，0：单选-基础，1：单选-并排，2：多选
+ * @property sType
+ * @default 1
+ * @type String
+ */
+/**
+ * 初始化值为空时，getValue()方法自动选择首项
+ * @property defaultSelect
+ * @default 1
+ * @type String
+ */
+
+import &#x27;./bSelectInput.scss&#x27;;
+import tpl from &#x27;./bSelectInput.html&#x27;;
+
+var Base = require(&#x27;../../base/component&#x27;);
+let SelectInput = Base.extend({
+    template: tpl,
+    name: &#x27;bSelectInput&#x27;,
+    data: {
+        name: &quot;bSelectInput&quot;,
+        value: &quot;&quot;,
+        initValue: &#x27;&#x27;, // 下拉选择框时初始展示选中的value
+        optionValues: &quot;&quot;,//选项值
+        sType: &quot;1&quot;,       //类型，0：单选-基础，1：单选-并排，2：多选
+        defaultSelect: &quot;1&quot;,  //初始化值为空时，自动选择首项
+    },
+    config: function () {
+    },
+    init: function () {
+        var self = this;
+        if (this.data.optionValues &amp;&amp; this.getValType(this.data.optionValues) == &#x27;object&#x27; &amp;&amp; this.data.optionValues.length &gt; 0) {
+            this.data.optionValues.forEach(function (item) {
+                if (item.key == self.data.value) {
+                    self.data.initValue = item.value;
+                    self.$update();
+                    return;
+                }
+            })
+        }
+    },
+    /**
+     * 设置选中值
+     * @method setValue
+     * @param {String} value  填写值
+     * @return undefined
+     */
+    setValue: function (_val) {
+        this.data.value = _val;
+        this.$update();
+    },
+    /**
+     * 获取value
+     * @method getValue
+     * @return String
+     */
+    getValue: function () {
+        if (!this.data.value &amp;&amp; this.data.need &amp;&amp; this.data.optionValues &amp;&amp; this.data.sType == &#x27;1&#x27; &amp;&amp; this.data.defaultSelect == &#x27;1&#x27;) {
+            this.data.value = this.data.optionValues[0].key
+        }
+        return this.data.value;
+    },
+    __onSelect: function (item, _event) {
+        if (this.data.sType == &#x27;2&#x27; &amp;&amp; this.data.value.indexOf(item.key) === -1) {
+            if (!this.data.value) this.data.value = [];
+            this.data.value.push(item.key);
+        } else {
+            if (item.key != this.data.value) {
+                this.data.initValue = item.value;
+                this.data.value = item.key;
+            }
+        }
+        if (this.data.sType == &#x27;0&#x27;) {
+            this.data.selectBoxShowFlag = false;
+        }
+        this.$update();
+        this.$emit(&#x27;onSelectChange&#x27;, this.data.value); // 通知上层组件，select值改变
+    },
+    __onCancel: function (_key) {
+        var _index = this.data.value.indexOf(_key);
+        if (this.data.sType == &#x27;2&#x27; &amp;&amp; _index != -1) {
+            this.data.value.splice(_index, 1);
+            this.$update();
+        }
+    },
+    showSelectBox: function () {
+        this.data.selectBoxShowFlag = !this.data.selectBoxShowFlag;
+        this.$update();
+    },
+    getValType: function (_val) {
+        return typeof _val;
+    }
+
+});
+
+module.exports =  SelectInput;
+
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

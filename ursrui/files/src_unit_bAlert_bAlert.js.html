@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>src/unit/bAlert/bAlert.js - URS RUI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="/urs-rui/doc/">
+             
+            <img alt="URS RUI" src="../assets/img/logo.png" title="URS RUI">
+            
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="/urs-rui/doc/ui-standard/index.html">URS UI规范</a>
+                    </li>
+                    
+                    <li><a href="https://g.hz.netease.com/urs-front/urs-rui">GitLab</a>
+                    </li>
+                    
+                    <li><a href="http://npm.hz.netease.com/package/@netease/urs-rui">NPM</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>元件 / 模块</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to Filter Components">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Module</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/H5MbInput.html">H5MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/H5Tab.html">H5Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bMbInput.html">bMbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PwdInput.html">PwdInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SmsInput[待整理].html">SmsInput[待整理]</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Sass</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/bCommon.scss.html">bCommon.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/_config.scss.html">_config.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Unit</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Alert.html">Alert</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Button.html">Button</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Captcha.html">Captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Gotop.html">Gotop</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bInput.html">bInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Menu.html">Menu</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Pager.html">Pager</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Quest.html">Quest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SelectInput.html">SelectInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Slide.html">Slide</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Tab.html">Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Toast.html">Toast</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>src/unit/bAlert/bAlert.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+ /**
+ * **单元组件 - alert弹框[bAlert]**&lt;br&gt;
+ * 基础的bAlert封装组件&lt;br&gt;
+ * **使用方法：**&lt;br&gt;
+ * &#x60;&#x60;&#x60;
+ * 【引用关键字】
+ * import bAlert from &#x27;urs-rui/src/unit/bAlert/bAlert.js&#x27;;
+ * &#x60;&#x60;&#x60;
+ * &#x60;&#x60;&#x60;
+ * 【组件标签】
+ * bAlert.show({
+            title:&#x27;提示&#x27;, // 可传空，不显示tilte
+            content:&#x27;&lt;p style=&quot;color:red;&quot;&gt;你好&lt;/p&gt;&#x27;,
+            cancelBtn:&#x27;取消&#x27;
+        }, this.ok.bind(this), 
+        this.cancel.bind(this)
+    )
+ *
+ * &#x60;&#x60;&#x60;
+ * @class Alert
+ * @main Unit
+ * @demo unit/bAlert/demo-1.html {alert}
+ * @constructor
+ * 
+ * @show true
+ * @author hzjiangchuanhua@corp.netease.com
+ */
+
+ /*================组件可传参数==================*/
+
+ /**
+ * 外层样式
+ * @property clazz
+ * @default 
+ * @type String
+ */
+
+ /**
+ * 初始化数据
+ * @property data
+ * @default {title:&quot;提示&quot;,content:&#x27;&#x27;,closeBtn:false,okBtn:true,cancelBtn:false}
+ * @type Object
+ *       tilte: 传空则不显示标题
+ *       content: 支持html结构
+ */
+
+ /**
+ * 点击确认按钮回调函数
+ * @property ok
+ * @default 默认关闭当前窗口
+ * @type function
+ */
+
+ /**
+ * 点击取消按钮回调函数
+ * @property cancel
+ * @default 默认关闭当前窗口
+ * @type function
+ */
+
+ /**
+ * 点击关闭按钮回调函数
+ * @property close
+ * @default 默认关闭当前窗口
+ * @type function
+ */
+
+import Base from &#x27;../../base/component&#x27;
+import _tpl from &#x27;./bAlert.rgl&#x27;;
+import &#x27;./bAlert.scss&#x27;;
+
+const bAlert = Base.extend({
+    name: &#x27;bAlert&#x27;,
+    template: _tpl,
+    config(){
+        this.defaults({
+            title:&#x27;提示&#x27;,
+            content: &#x27;&#x27;,
+            closeBtn: false,
+            okBtn: true,
+            cancelBtn: false,
+        });
+        this.supr();
+    },
+    init(){
+        // 如果不是内嵌组件，则嵌入到document.body中
+        if(this.$root === this)
+            this.$inject(document.body);
+    },
+    /**
+     *  关闭对话框
+     *  @param {boolean} result 点击确认还是取消
+     */
+    close(result){
+        this.$emit(&#x27;close&#x27;,{
+            result: result
+        });
+        result? this.ok() : this.cancel();
+    },
+    // 点击确认按钮
+    ok(){
+        this.$emit(&#x27;ok&#x27;);
+        this.destroy();
+    },
+    // 点击取消按钮
+    cancel(){
+        this.$emit(&#x27;cancel&#x27;);
+        this.destroy();
+    }
+});
+
+
+/**
+ * 显示alert弹框
+ * @method show
+ * @param {object} data 
+ * @param {function} ok 确认成功回调
+ * @param {function} cancel 取消成功回调
+ * @param {function} close 关闭成功回调
+ * @return 弹窗实例对象
+ * 
+ */
+bAlert.show = function(data, ok, cancel, close){
+    var _data = data || {},
+        close = close || function(){},
+        ok = ok || function(){},
+        cancel = cancel || function(){};
+    var _modal = new this({data:_data});
+    _modal.$on(&#x27;close&#x27;, close)
+          .$on(&#x27;ok&#x27;, ok)
+          .$on(&#x27;cancel&#x27;, cancel);
+    
+    return _modal;
+}
+
+// export default bAlert;
+module.exports = bAlert;
+
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

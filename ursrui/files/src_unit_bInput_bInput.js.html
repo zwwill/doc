@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>src/unit/bInput/bInput.js - URS RUI</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="/urs-rui/doc/">
+             
+            <img alt="URS RUI" src="../assets/img/logo.png" title="URS RUI">
+            
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="/urs-rui/doc/ui-standard/index.html">URS UI规范</a>
+                    </li>
+                    
+                    <li><a href="https://g.hz.netease.com/urs-front/urs-rui">GitLab</a>
+                    </li>
+                    
+                    <li><a href="http://npm.hz.netease.com/package/@netease/urs-rui">NPM</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>元件 / 模块</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to Filter Components">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Module</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/H5MbInput.html">H5MbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/H5Tab.html">H5Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bMbInput.html">bMbInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PwdInput.html">PwdInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SmsInput[待整理].html">SmsInput[待整理]</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Sass</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/bCommon.scss.html">bCommon.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/_config.scss.html">_config.scss</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <p>Unit</p>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Alert.html">Alert</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Button.html">Button</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Captcha.html">Captcha</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Gotop.html">Gotop</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/bInput.html">bInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Menu.html">Menu</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Pager.html">Pager</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Quest.html">Quest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/SelectInput.html">SelectInput</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Slide.html">Slide</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Tab.html">Tab</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Toast.html">Toast</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>src/unit/bInput/bInput.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+/**
+ * **单元组件 - 基础输入框[bInput]**&lt;br&gt;
+ * 基础的输入框封装组件&lt;br&gt;
+ * 支持输入、校验、报错提示、清空输入框等功能&lt;br&gt;
+ * **使用方法：**&lt;br&gt;
+ * &#x60;&#x60;&#x60;
+ * 【引用关键字】
+ * require(&#x27;urs-rui/src/unit/bInput/bInput.js&#x27;)
+ * &#x60;&#x60;&#x60;
+ * &#x60;&#x60;&#x60;
+ * 【组件标签】
+ * &lt;bInput /&gt;
+ *
+ * &#x60;&#x60;&#x60;
+ * @class bInput
+ * @main Unit
+ * @constructor
+ * @demo unit/bInput/demo-1.html {带删除按钮}
+ * @show true
+ * @author 黄笛
+ * @revise 注释撰写 [2017-08-28] [黄笛]
+ */
+
+/*================组件可传参数==================*/
+/**
+ * 组件自定义追加类名，将追加到组件最外层html结构class属性中
+ * @property clazz
+ * @default &#x27;&#x27;
+ * @type String
+ */
+
+/**
+ * 输入框input标签value属性值，双向绑定
+ * @property value
+ * @default &#x27;&#x27;
+ * @type String
+ */
+
+ /**
+ * 输入框input标签type属性值
+ * @property type
+ * @default &#x27;text&#x27;
+ * @type String
+ */
+
+/**
+* 输入框input标签name属性值
+* @property name
+* @default &#x27;&#x27;
+* @type String
+*/
+
+/**
+* 输入框input标签是否禁用状态
+* @property disabled
+* @default 0
+* @type Boolean
+*/
+
+/**
+* 输入框input标签placeholder属性值
+* @property placeholder
+* @default &#x27;&#x27;
+* @type String
+*/
+
+/**
+* 基础输入框组件状态，可选‘error’(校验不通过)
+* @property state
+* @default &#x27;&#x27;
+* @type String
+*/
+
+/**
+* 是否允许显示清空输入框按钮
+* @property enableDelete
+* @default true
+* @type Boolean
+*/
+
+/**
+ * 清空输入框按钮样式类名
+ * @property del_icon_clazz
+ * @default &#x27;i-icon i-icon-delete&#x27;
+ * @type String
+ */
+
+/**
+ * 清空输入框后是否自动聚焦
+ * @property deleteAutoFocus
+ * @default 0
+ * @type Boolean
+ */
+
+/**
+ * 输入框组件错误提示文案，显示在组件下方
+ * @property errMsg
+ * @default &#x27;&#x27;
+ * @type String
+ */
+ 
+/**
+ * 是否必填
+ * @property require
+ * @default true
+ * @type Boolean
+ */
+
+ /**
+ * 是否失焦校验输入框
+ * @property blurValidate
+ * @default true
+ * @type Boolean
+ */
+
+ /**
+ * 是否允许显示错误提示
+ * @property showErr
+ * @default &#x27;&#x27;
+ * @type String
+ */
+
+ /**
+ * 必填输入框为空校验时提示的文案
+ * @property rqMsg
+ * @default &#x27;请输入内容&#x27;
+ * @type String
+ */
+
+ /**
+ * 输入框校验规则数组
+ * @property rules
+ * @default []
+ * @type Array
+ */
+
+ /**
+ * 输入框最大允许输入长度
+ * @property maxlength
+ * @default 50
+ * @type Number
+ */
+
+/**
+ * 输入框最小输入长度
+ * @property minlength
+ * @default 50
+ * @type Number
+ */
+
+/*================可发起/监听事件=================*/
+/**
+ * 输入框聚焦
+ * @event focus
+ * @return {Object} event
+ */
+
+/**
+ * 输入框失焦
+ * @event blur
+ * @return {Object} event
+ */
+
+/**
+ * 输入框正在输入
+ * @event input
+ * @return {Object} event
+ */
+
+&#x27;use strict&#x27;
+
+import Base from &#x27;../base/base&#x27;
+import &#x27;./bInput.scss&#x27;
+import tpl from &#x27;./bInput.rgl&#x27;
+
+
+var bowser = require(&#x27;bowser&#x27;);
+
+export default Base.extend({
+    name: &#x27;bInput&#x27;,
+    template: tpl,
+    config() {
+        this.defaults({
+            clazz: &#x27;&#x27;,
+            value: &#x27;&#x27;,
+            type: &#x27;text&#x27;,
+            name: &#x27;&#x27;,
+            disabled: false,
+            placeholder: &#x27;&#x27;,
+            state: &#x27;&#x27;,
+            enableDelete: true,
+            del_icon_clazz:&#x27;iconfont icon-clearall bInput_delete&#x27;,
+            deleteAutoFocus: false,
+            errMsg:&#x27;&#x27;,
+            require: true,
+            blurValidate: true,
+            showErr: true,
+            rqMsg: &#x27;请输入内容&#x27;,
+            // pass: false,  // 
+            rules:[],
+            maxlength: 50,
+            minlength: 0,
+            _eltIE9: bowser.msie &amp;&amp; bowser.version &lt;= 9,  // 内部
+            _onNoBlur: 0  // 内部
+        });
+        this.supr(); 
+    },
+    init(){
+        this.supr();
+    },
+    destroy() {
+        this.supr();
+    },
+    /**
+     * 校验输入框
+     * @method validate
+     * @return Object
+     */
+    validate(trigger=&#x27;blur&#x27;) {
+        // let rules = this.data.rules.filter((rule)=&gt;{
+        //     return (rule.trigger!==&#x27;submit&#x27;);
+        // });
+        let rules = this.data.rules;
+        let ret = {success:1,msg:&#x27;&#x27;};
+        // 提交校验需要验证是否非空
+        // @NOTE 非空校验单独提取 默认非空
+        if(trigger === &#x27;submit&#x27;){
+            if((this.data.require &amp;&amp; this.data.value === &#x27;&#x27;)){
+                ret.success = 0;
+                ret.msg = this.data.rqMsg;
+                this.data.showErr&amp;&amp;this.showError(ret.msg);
+                return ret;
+            }
+            if(!this.data.require &amp;&amp; this.data.value === &#x27;&#x27;){
+                return ret;
+            }
+        }
+        for (var i = 0; i &lt; rules.length; i++) {
+            if(rules[i].rule instanceof RegExp){
+                let result = rules[i].rule.test(this.data.value);
+                // 反向校验，符合该正则时失败
+                if(rules[i].type === &#x27;isNot&#x27;){
+                    result = !result;
+                }
+                // 校验失败
+                if(!result){
+                    ret.success = 0;
+                    ret.msg = rules[i].msg;
+                    this.data.showErr&amp;&amp;this.showError(ret.msg);
+                    // @NOTE 正则错误的提前退出一定是同步的
+                    return ret;
+                }
+            }else if(typeof rules[i].rule == &#x27;function&#x27;){
+                ret.success = rules[i].rule.call(this, this.data.value);
+                ret.msg = rules[i].msg;
+                if(!ret.success){
+                    this.data.showErr&amp;&amp;this.showError(ret.msg);
+                    return ret;
+                }
+            }
+        }
+        return ret;
+    },
+    /**
+     * 主动聚焦输入框
+     * @method focus
+     * @return undefined
+     */
+    focus() {
+        this.$refs.input.focus();
+    },
+    /**
+     * 主动失焦输入框
+     * @method blur
+     * @return undefined
+     */
+    blur() {
+        this.$refs.input.blur();
+    },
+    /**
+     * 获取输入框值value
+     * @method getValue
+     * @return String
+     */
+    getValue() {
+        return this.$refs.input.value;
+    },
+    /**
+     * 设置输入框值value
+     * @method setValue
+     * @return undefined
+     */
+    setValue(_value) {
+        this.$refs.input.value = _value||&#x27;&#x27;;
+    },
+    /**
+     * 设置输入框状态
+     * @method setState
+     * @param {String} _state 状态 ** *error* | &#x27;&#x27; **
+     * @return undefined
+     */
+    setState(_state){
+        this.data.state = _state||&#x27;&#x27;
+    },
+    /**
+     * 获取输入框状态
+     * @method getState
+     * @return String 
+     */
+    getState(){
+        return this.data.state;
+    },
+    /**
+     * 显示输入框错误提示、设置错误状态
+     * @method showError
+     * @param {String} _errMsg 
+     * @return undefined
+     */
+    showError(_errMsg) {
+        this.data.state = &#x27;error&#x27;;
+        this.data.errMsg = _errMsg;
+        this.$update();
+    },
+    /**
+     * 清除输入框错误提示、清空错误状态
+     * @method clearError
+     * @return undefined
+     */
+    clearError() {
+        // if(this.data.state === &#x27;error&#x27;){
+        this.data.state = &#x27;&#x27;;
+        this.data.errMsg = &#x27;&#x27;;
+        // }
+        this.$update();
+    },
+/*================内部监听事件=================*/
+    // 聚焦
+    _onFocus(_event) {
+        this.$emit(&#x27;focus&#x27;,_event);
+        this.$update();
+    },
+    // 失焦
+    _onBlur(_event) {
+
+        // @TODO 校验blur时是不是在删除按钮上
+        if(this.data.value === &#x27;&#x27;||this.data._onNoBlur === 1){
+            return;
+        }
+        
+        this.data.blurValidate&amp;&amp;this.validate(&#x27;blur&#x27;);
+        this.$emit(&#x27;blur&#x27;,_event);
+    },
+    // 输入
+    _onInput(_event){
+        this.$emit(&#x27;input&#x27;, _event);
+        if((_event.event &amp;&amp; _event.event.propertyName === &#x27;value&#x27;)||_event.type==&#x27;input&#x27;){
+            this.clearError();
+        }
+        // TODO _compositionInputing处理
+        // setTimeout(() =&gt; !this.data._compositionInputing &amp;&amp; this.validate(&#x27;input&#x27;));
+        // this.validate(&#x27;input&#x27;);
+    },
+    // 清空输入
+    _onDelete(_event){
+        this.data.value = &#x27;&#x27;;
+        this.clearError();
+        // 是否配置为清空输入框自动focus
+        if(!!this.data.deleteAutoFocus){
+            this.focus();
+            
+        }
+    },
+    // 在删除按钮上
+    _onNoBlur(_event){
+        this.data._onNoBlur = 1;
+    },
+    // 不在删除按钮上
+    _onOutNoBlur(_event){
+        this.data._onNoBlur = 0;
+    }
+});
+
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>
