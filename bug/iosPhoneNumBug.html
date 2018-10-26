@@ -35,15 +35,22 @@
 	<input id="inp" type="text" placeholder="从原生通讯录复制手机号">
 	<button id="btn">照妖镜</button>
 	<div id="info"></div>
-	<script>
+	<script>	
 		$("#btn").click(function(){
 			var val = $("#inp").val(),
 				len = val.length,
-				out = `
+				out = '',
+			    	u = '';
+			u = val.replace(/./g,function(e){
+				var c = e.charCodeAt(0).toString(16);
+				return ' \\u0000'.match(new RegExp("(\.*)\\d{"+c.length+"}"))[1]+c;
+			})
+			out = `
 				value: ${val}<br>
 				length: ${len}<br>
 				encodeURI: ${encodeURIComponent(val)}<br>
-				`
+				unicode: ${u}
+				`;
 			$('#info').html(out);
 		})
 	</script>
